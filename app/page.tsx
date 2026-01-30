@@ -19,6 +19,7 @@ const components = [
   { name: 'Dialog', description: 'Modal dialog component' },
   { name: 'Drawer', description: 'Slide-in panel from screen edge' },
   { name: 'Empty', description: 'Empty state placeholder component' },
+  { name: 'Field', description: 'Form field with label and validation' },
   { name: 'Radio Group', description: 'Radio button group component' },
   { name: 'Switch', description: 'Toggle switch component' },
   { name: 'Dialog', description: 'Modal dialog component' },
