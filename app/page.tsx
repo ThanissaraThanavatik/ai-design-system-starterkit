@@ -15,6 +15,7 @@ const components = [
   { name: 'Command', description: 'Command palette and menu component' },
   { name: 'Context Menu', description: 'Right-click context menu component' },
   { name: 'Data Table', description: 'Powerful table for displaying data' },
+  { name: 'Date Picker', description: 'Date selection with calendar popup' },
   { name: 'Radio Group', description: 'Radio button group component' },
   { name: 'Switch', description: 'Toggle switch component' },
   { name: 'Dialog', description: 'Modal dialog component' },
