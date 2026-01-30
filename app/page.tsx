@@ -18,6 +18,7 @@ const components = [
   { name: 'Date Picker', description: 'Date selection with calendar popup' },
   { name: 'Dialog', description: 'Modal dialog component' },
   { name: 'Drawer', description: 'Slide-in panel from screen edge' },
+  { name: 'Empty', description: 'Empty state placeholder component' },
   { name: 'Radio Group', description: 'Radio button group component' },
   { name: 'Switch', description: 'Toggle switch component' },
   { name: 'Dialog', description: 'Modal dialog component' },
