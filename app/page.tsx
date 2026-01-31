@@ -1,52 +1,52 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import Link from 'next/link'
 
 const components = [
-  { name: 'Button', description: 'Interactive button component' },
-  { name: 'Card', description: 'Container component for grouped content' },
-  { name: 'Badge', description: 'Label component' },
-  { name: 'Alert', description: 'Alert notification component' },
-  { name: 'Accordion', description: 'Expandable accordion component' },
-  { name: 'Breadcrumb', description: 'Navigation breadcrumb component' },
-  { name: 'Avatar', description: 'User avatar component' },
-  { name: 'Checkbox', description: 'Checkbox input component' },
-  { name: 'Collapsible', description: 'Expandable/collapsible panel component' },
-  { name: 'Combobox', description: 'Autocomplete input with suggestions' },
-  { name: 'Command', description: 'Command palette and menu component' },
-  { name: 'Context Menu', description: 'Right-click context menu component' },
-  { name: 'Data Table', description: 'Powerful table for displaying data' },
-  { name: 'Date Picker', description: 'Date selection with calendar popup' },
-  { name: 'Dialog', description: 'Modal dialog component' },
-  { name: 'Drawer', description: 'Slide-in panel from screen edge' },
-  { name: 'Empty', description: 'Empty state placeholder component' },
-  { name: 'Field', description: 'Form field with label and validation' },
-  { name: 'Hover Card', description: 'Preview content on hover' },
-  { name: 'Input', description: 'Text input field component' },
-  { name: 'Input Group', description: 'Combined input with addons and buttons' },
-  { name: 'Input OTP', description: 'One-time password input component' },
-  { name: 'Item', description: 'Versatile list item component' },
-  { name: 'KPI', description: 'Key performance indicator cards' },
-  { name: 'KBD', description: 'Keyboard key and shortcut display' },
-  { name: 'Label', description: 'Accessible label for form controls' },
-  { name: 'Menubar', description: 'Horizontal menu bar for applications' },
-  { name: 'Native Select', description: 'Styled native HTML select element' },
-  { name: 'Radio Group', description: 'Radio button group component' },
-  { name: 'Switch', description: 'Toggle switch component' },
-  { name: 'Dialog', description: 'Modal dialog component' },
-  { name: 'Dropdown Menu', description: 'Dropdown menu component' },
-  { name: 'Popover', description: 'Popover tooltip component' },
-  { name: 'Tooltip', description: 'Tooltip component' },
-  { name: 'Form', description: 'Form builder component' },
-  { name: 'Input', description: 'Text input component' },
-  { name: 'Select', description: 'Select dropdown component' },
-  { name: 'Tabs', description: 'Tabbed content component' },
-  { name: 'Slider', description: 'Range slider component' },
-  { name: 'Progress', description: 'Progress bar component' },
-  { name: 'Pagination', description: 'Pagination component' },
-  { name: 'Table', description: 'Data table component' },
-  { name: 'Carousel', description: 'Image carousel component' },
-  { name: 'Calendar', description: 'Date picker calendar' },
-  { name: 'Skeleton', description: 'Loading skeleton' },
+  { name: 'Button', description: 'Interactive button component', href: '/button' },
+  { name: 'Card', description: 'Container component for grouped content', href: '/card' },
+  { name: 'Badge', description: 'Label component', href: '/badge' },
+  { name: 'Alert', description: 'Alert notification component', href: '/alert' },
+  { name: 'Accordion', description: 'Expandable accordion component', href: '/accordion' },
+  { name: 'Breadcrumb', description: 'Navigation breadcrumb component', href: '/breadcrumb' },
+  { name: 'Avatar', description: 'User avatar component', href: '/avatar' },
+  { name: 'Checkbox', description: 'Checkbox input component', href: '/checkbox' },
+  { name: 'Collapsible', description: 'Expandable/collapsible panel component', href: '/collapsible' },
+  { name: 'Combobox', description: 'Autocomplete input with suggestions', href: '/combobox' },
+  { name: 'Command', description: 'Command palette and menu component', href: '/command' },
+  { name: 'Context Menu', description: 'Right-click context menu component', href: '/context-menu' },
+  { name: 'Data Table', description: 'Powerful table for displaying data', href: '/data-table' },
+  { name: 'Date Picker', description: 'Date selection with calendar popup', href: '/date-picker' },
+  { name: 'Dialog', description: 'Modal dialog component', href: '/dialog' },
+  { name: 'Drawer', description: 'Slide-in panel from screen edge', href: '/drawer' },
+  { name: 'Empty', description: 'Empty state placeholder component', href: '/empty' },
+  { name: 'Field', description: 'Form field with label and validation', href: '/field' },
+  { name: 'Hover Card', description: 'Preview content on hover', href: '/hover-card' },
+  { name: 'Input', description: 'Text input field component', href: '/input' },
+  { name: 'Input Group', description: 'Combined input with addons and buttons', href: '/input-group' },
+  { name: 'Input OTP', description: 'One-time password input component', href: '/input-otp' },
+  { name: 'Item', description: 'Versatile list item component', href: '/item' },
+  { name: 'KPI', description: 'Key performance indicator cards', href: '/kpi' },
+  { name: 'KBD', description: 'Keyboard key and shortcut display', href: '/kbd' },
+  { name: 'Label', description: 'Accessible label for form controls', href: '/label' },
+  { name: 'Menubar', description: 'Horizontal menu bar for applications', href: '/menubar' },
+  { name: 'Navigation Menu', description: 'Horizontal navigation with dropdowns', href: '/navigation-menu' },
+  { name: 'Native Select', description: 'Styled native HTML select element', href: '/native-select' },
+  { name: 'Radio Group', description: 'Radio button group component', href: '/radio-group' },
+  { name: 'Switch', description: 'Toggle switch component', href: '/switch' },
+  { name: 'Dropdown Menu', description: 'Dropdown menu component', href: '/dropdown-menu' },
+  { name: 'Popover', description: 'Popover tooltip component', href: '/popover' },
+  { name: 'Tooltip', description: 'Tooltip component', href: '/tooltip' },
+  { name: 'Form', description: 'Form builder component', href: '/form' },
+  { name: 'Select', description: 'Select dropdown component', href: '/select' },
+  { name: 'Tabs', description: 'Tabbed content component', href: '/tabs' },
+  { name: 'Slider', description: 'Range slider component', href: '/slider' },
+  { name: 'Progress', description: 'Progress bar component', href: '/progress' },
+  { name: 'Pagination', description: 'Pagination component', href: '/pagination' },
+  { name: 'Table', description: 'Data table component', href: '/table' },
+  { name: 'Carousel', description: 'Image carousel component', href: '/carousel' },
+  { name: 'Calendar', description: 'Date picker calendar', href: '/calendar' },
+  { name: 'Skeleton', description: 'Loading skeleton', href: '/skeleton' },
 ]
 
 export default function Home() {
@@ -102,12 +102,14 @@ export default function Home() {
           <h2 className="text-2xl font-bold mb-8">Available Components</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {components.map((component) => (
-              <Card key={component.name} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle className="text-base">{component.name}</CardTitle>
-                  <CardDescription>{component.description}</CardDescription>
-                </CardHeader>
-              </Card>
+              <Link key={component.name} href={component.href}>
+                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+                  <CardHeader>
+                    <CardTitle className="text-base">{component.name}</CardTitle>
+                    <CardDescription>{component.description}</CardDescription>
+                  </CardHeader>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
