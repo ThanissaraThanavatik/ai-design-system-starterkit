@@ -29,6 +29,7 @@ const components = [
   { name: 'KBD', description: 'Keyboard key and shortcut display' },
   { name: 'Label', description: 'Accessible label for form controls' },
   { name: 'Menubar', description: 'Horizontal menu bar for applications' },
+  { name: 'Native Select', description: 'Styled native HTML select element' },
   { name: 'Radio Group', description: 'Radio button group component' },
   { name: 'Switch', description: 'Toggle switch component' },
   { name: 'Dialog', description: 'Modal dialog component' },
