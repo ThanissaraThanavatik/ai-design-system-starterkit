@@ -39,6 +39,7 @@ const components = [
   { name: 'Sheet', description: 'Slide-over panel component', href: '/sheet' },
   { name: 'Sidebar', description: 'Navigation sidebar component', href: '/sidebar' },
   { name: 'Sonner', description: 'Toast notification component', href: '/sonner' },
+  { name: 'Spinner', description: 'Loading spinner component', href: '/spinner' },
   { name: 'Switch', description: 'Toggle switch component', href: '/switch' },
   { name: 'Dropdown Menu', description: 'Dropdown menu component', href: '/dropdown-menu' },
   { name: 'Popover', description: 'Popover tooltip component', href: '/popover' },
