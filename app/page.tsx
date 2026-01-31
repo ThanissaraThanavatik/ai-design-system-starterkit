@@ -23,6 +23,7 @@ const components = [
   { name: 'Hover Card', description: 'Preview content on hover' },
   { name: 'Input', description: 'Text input field component' },
   { name: 'Input Group', description: 'Combined input with addons and buttons' },
+  { name: 'Input OTP', description: 'One-time password input component' },
   { name: 'Radio Group', description: 'Radio button group component' },
   { name: 'Switch', description: 'Toggle switch component' },
   { name: 'Dialog', description: 'Modal dialog component' },
