@@ -26,6 +26,7 @@ const components = [
   { name: 'Input OTP', description: 'One-time password input component' },
   { name: 'Item', description: 'Versatile list item component' },
   { name: 'KPI', description: 'Key performance indicator cards' },
+  { name: 'KBD', description: 'Keyboard key and shortcut display' },
   { name: 'Radio Group', description: 'Radio button group component' },
   { name: 'Switch', description: 'Toggle switch component' },
   { name: 'Dialog', description: 'Modal dialog component' },
