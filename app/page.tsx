@@ -28,6 +28,7 @@ const components = [
   { name: 'KPI', description: 'Key performance indicator cards' },
   { name: 'KBD', description: 'Keyboard key and shortcut display' },
   { name: 'Label', description: 'Accessible label for form controls' },
+  { name: 'Menubar', description: 'Horizontal menu bar for applications' },
   { name: 'Radio Group', description: 'Radio button group component' },
   { name: 'Switch', description: 'Toggle switch component' },
   { name: 'Dialog', description: 'Modal dialog component' },
