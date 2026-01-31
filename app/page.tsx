@@ -25,6 +25,7 @@ const components = [
   { name: 'Input Group', description: 'Combined input with addons and buttons' },
   { name: 'Input OTP', description: 'One-time password input component' },
   { name: 'Item', description: 'Versatile list item component' },
+  { name: 'KPI', description: 'Key performance indicator cards' },
   { name: 'Radio Group', description: 'Radio button group component' },
   { name: 'Switch', description: 'Toggle switch component' },
   { name: 'Dialog', description: 'Modal dialog component' },
