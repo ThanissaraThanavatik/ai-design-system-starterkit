@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Slot } from "@radix-ui/react-slot"
 import { cn } from "@/lib/utils"
 
 const ButtonGroup = React.forwardRef<
@@ -51,11 +52,7 @@ const ButtonGroupText = React.forwardRef<
     asChild?: boolean
   }
 >(({ className, asChild = false, ...props }, ref) => {
-  const Comp = asChild ? React.Fragment : "span"
-
-  if (asChild) {
-    return <>{props.children}</>
-  }
+  const Comp = asChild ? Slot : "span"
 
   return (
     <Comp

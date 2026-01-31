@@ -259,19 +259,19 @@ export default function PaginationShowcasePage() {
                 <Pagination>
                   <PaginationContent>
                     <PaginationItem>
-                      <PaginationPrevious href="#" variant="outline" />
+                      <PaginationPrevious href="#"  />
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href="#" variant="outline">1</PaginationLink>
+                      <PaginationLink href="#" >1</PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href="#" variant="outline" isActive>2</PaginationLink>
+                      <PaginationLink href="#"  isActive>2</PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href="#" variant="outline">3</PaginationLink>
+                      <PaginationLink href="#" >3</PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationNext href="#" variant="outline" />
+                      <PaginationNext href="#"  />
                     </PaginationItem>
                   </PaginationContent>
                 </Pagination>
@@ -285,19 +285,19 @@ export default function PaginationShowcasePage() {
                 <Pagination>
                   <PaginationContent>
                     <PaginationItem>
-                      <PaginationPrevious href="#" variant="ghost" />
+                      <PaginationPrevious href="#"  />
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href="#" variant="ghost">1</PaginationLink>
+                      <PaginationLink href="#" >1</PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href="#" variant="ghost" isActive>2</PaginationLink>
+                      <PaginationLink href="#"  isActive>2</PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href="#" variant="ghost">3</PaginationLink>
+                      <PaginationLink href="#" >3</PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationNext href="#" variant="ghost" />
+                      <PaginationNext href="#"  />
                     </PaginationItem>
                   </PaginationContent>
                 </Pagination>
@@ -311,19 +311,19 @@ export default function PaginationShowcasePage() {
                 <Pagination>
                   <PaginationContent>
                     <PaginationItem>
-                      <PaginationPrevious href="#" variant="secondary" />
+                      <PaginationPrevious href="#"  />
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href="#" variant="secondary">1</PaginationLink>
+                      <PaginationLink href="#" >1</PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href="#" variant="secondary" isActive>2</PaginationLink>
+                      <PaginationLink href="#"  isActive>2</PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href="#" variant="secondary">3</PaginationLink>
+                      <PaginationLink href="#" >3</PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationNext href="#" variant="secondary" />
+                      <PaginationNext href="#"  />
                     </PaginationItem>
                   </PaginationContent>
                 </Pagination>
@@ -606,7 +606,7 @@ export default function PaginationShowcasePage() {
                 <Pagination>
                   <PaginationContent>
                     <PaginationItem>
-                      <Button variant="outline" size="icon" className="h-8 w-8">
+                      <Button  size="icon" className="h-8 w-8">
                         <ChevronLeft className="h-4 w-4" />
                       </Button>
                     </PaginationItem>
@@ -614,7 +614,7 @@ export default function PaginationShowcasePage() {
                       <span className="text-sm mx-4">1 / 10</span>
                     </PaginationItem>
                     <PaginationItem>
-                      <Button variant="outline" size="icon" className="h-8 w-8">
+                      <Button  size="icon" className="h-8 w-8">
                         <ChevronRight className="h-4 w-4" />
                       </Button>
                     </PaginationItem>
@@ -720,7 +720,7 @@ export default function PaginationShowcasePage() {
 
         {/* Back to Home */}
         <div className="text-center pt-8">
-          <Button asChild variant="outline">
+          <Button asChild >
             <a href="/">← Back to Home</a>
           </Button>
         </div>

@@ -60,7 +60,6 @@ import {
 } from 'lucide-react'
 
 export default function SidebarShowcasePage() {
-  const [activeItem, setActiveItem] = useState('dashboard')
   const [collapsed, setCollapsed] = useState(false)
 
   return (
@@ -82,16 +81,16 @@ export default function SidebarShowcasePage() {
             <SidebarContent>
               <SidebarMenu>
                 <SidebarMenuItem>
-                  <SidebarMenuButton asChild isActive={activeItem === 'dashboard'}>
-                    <a href="#" onClick={() => setActiveItem('dashboard')}>
+                  <SidebarMenuButton asChild>
+                    <a href="#">
                       <Home className="h-4 w-4" />
                       Dashboard
                     </a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
                 <SidebarMenuItem>
-                  <SidebarMenuButton asChild isActive={activeItem === 'projects'}>
-                    <a href="#" onClick={() => setActiveItem('projects')}>
+                  <SidebarMenuButton asChild>
+                    <a href="#">
                       <FolderOpen className="h-4 w-4" />
                       Projects
                       <Badge variant="secondary" className="ml-auto">12</Badge>
@@ -99,16 +98,16 @@ export default function SidebarShowcasePage() {
                   </SidebarMenuButton>
                 </SidebarMenuItem>
                 <SidebarMenuItem>
-                  <SidebarMenuButton asChild isActive={activeItem === 'documents'}>
-                    <a href="#" onClick={() => setActiveItem('documents')}>
+                  <SidebarMenuButton asChild>
+                    <a href="#">
                       <FileText className="h-4 w-4" />
                       Documents
                     </a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
                 <SidebarMenuItem>
-                  <SidebarMenuButton asChild isActive={activeItem === 'media'}>
-                    <a href="#" onClick={() => setActiveItem('media')}>
+                  <SidebarMenuButton asChild>
+                    <a href="#">
                       <Image className="h-4 w-4" />
                       Media
                     </a>

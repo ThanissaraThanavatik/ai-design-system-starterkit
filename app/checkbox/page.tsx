@@ -137,7 +137,7 @@ export default function CheckboxShowcasePage() {
                 <Checkbox
                   id="controlled"
                   checked={checked}
-                  onCheckedChange={setChecked}
+                  onCheckedChange={(checked) => setChecked(checked === true)}
                 />
                 <Label htmlFor="controlled">
                   {checked ? 'Checked' : 'Unchecked'} - Click to toggle
@@ -231,7 +231,7 @@ export default function CheckboxShowcasePage() {
                     // You need to use the ref approach
                     ref={(ref) => {
                       if (ref) {
-                        ref.indeterminate = indeterminate && !ref.checked
+                        (ref as any).indeterminate = indeterminate && !(ref as any).checked
                       }
                     }}
                   />

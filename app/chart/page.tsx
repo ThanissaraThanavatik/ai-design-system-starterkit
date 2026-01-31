@@ -234,7 +234,7 @@ export default function ChartShowcasePage() {
                       cy="50%"
                       labelLine={false}
                       label={({ name, percent }) =>
-                        `${name} ${(percent * 100).toFixed(0)}%`
+                        `${name} ${percent ? (percent * 100).toFixed(0) : 0}%`
                       }
                       outerRadius={80}
                       fill="#8884d8"
@@ -446,14 +446,12 @@ export default function ChartShowcasePage() {
 
         {/* Back to Home */}
         <div className="text-center pt-8">
-          <Card asChild>
-            <a href="/" className="block">
-              <CardContent className="py-4">
-                <p className="text-muted-foreground hover:text-foreground transition-colors">
-                  ← Back to Home
-                </p>
-              </CardContent>
-            </a>
+          <Card>
+            <CardContent className="py-4">
+              <a href="/" className="text-muted-foreground hover:text-foreground transition-colors">
+                ← Back to Home
+              </a>
+            </CardContent>
           </Card>
         </div>
       </div>

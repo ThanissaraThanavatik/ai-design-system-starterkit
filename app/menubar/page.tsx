@@ -118,7 +118,7 @@ export default function MenubarShowcase() {
                     Save
                     <MenubarShortcut>⌘S</MenubarShortcut>
                   </MenubarItem>
-                  <MenubarItem>Save As...</MenubarShortcut></MenubarItem>
+                  <MenubarItem>Save As...<MenubarShortcut>⇧⌘S</MenubarShortcut></MenubarItem>
                   <MenubarSeparator />
                   <MenubarItem>
                     <Printer className="mr-2 h-4 w-4" />

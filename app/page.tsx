@@ -33,6 +33,11 @@ const components = [
   { name: 'Navigation Menu', description: 'Horizontal navigation with dropdowns', href: '/navigation-menu' },
   { name: 'Native Select', description: 'Styled native HTML select element', href: '/native-select' },
   { name: 'Radio Group', description: 'Radio button group component', href: '/radio-group' },
+  { name: 'Scroll Area', description: 'Scrollable container with custom styling', href: '/scroll-area' },
+  { name: 'Select', description: 'Select dropdown component', href: '/select' },
+  { name: 'Separator', description: 'Visual separator/divider component', href: '/separator' },
+  { name: 'Sheet', description: 'Slide-over panel component', href: '/sheet' },
+  { name: 'Sidebar', description: 'Navigation sidebar component', href: '/sidebar' },
   { name: 'Switch', description: 'Toggle switch component', href: '/switch' },
   { name: 'Dropdown Menu', description: 'Dropdown menu component', href: '/dropdown-menu' },
   { name: 'Popover', description: 'Popover tooltip component', href: '/popover' },
@@ -81,7 +86,7 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                44+ beautifully designed, customizable components
+                50+ beautifully designed, customizable components
               </p>
             </CardContent>
           </Card>
