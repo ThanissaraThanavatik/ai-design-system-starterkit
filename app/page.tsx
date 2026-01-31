@@ -21,6 +21,7 @@ const components = [
   { name: 'Empty', description: 'Empty state placeholder component' },
   { name: 'Field', description: 'Form field with label and validation' },
   { name: 'Hover Card', description: 'Preview content on hover' },
+  { name: 'Input', description: 'Text input field component' },
   { name: 'Radio Group', description: 'Radio button group component' },
   { name: 'Switch', description: 'Toggle switch component' },
   { name: 'Dialog', description: 'Modal dialog component' },
