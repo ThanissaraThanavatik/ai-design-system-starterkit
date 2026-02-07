@@ -205,56 +205,6 @@ export default function HomepageTest() {
         </div>
       </section>
 
-      {/* Concept Section - From Figma node 5024-404 */}
-      <section className="relative w-full overflow-hidden py-16 lg:py-24">
-        {/* Background Image */}
-        <Image
-          src="/images/yadom/concept-bg-5024-404.png"
-          alt="Yadom Concept Background"
-          fill
-          className="object-cover object-center z-0"
-          sizes="100vw"
-        />
-        
-        {/* Gradient Overlay */}
-        <div
-          className="absolute inset-0 z-10"
-          style={{
-            background: 'linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(0,150,137,0.2) 50%, rgba(0,150,137,0.4) 100%)'
-          }}
-        />
-        
-        {/* Content Container */}
-        <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center justify-center text-center">
-            {/* Text 1: "ไม่รู้ตัวเลยว่า...ยาดมกลายเป็น" */}
-            <h2 
-              className="text-white font-semibold mb-2"
-              style={{
-                fontSize: 'clamp(1.75rem, 5vw, 3.75rem)',
-                fontFamily: 'Inter, sans-serif',
-                textShadow: '0 2px 4px rgba(0,0,0,0.1)',
-              }}
-            >
-              ไม่รู้ตัวเลยว่า...ยาดมกลายเป็น
-            </h2>
-            
-            {/* Text 2: "ส่วนหนึ่งของชีวิต" */}
-            <h3 
-              className="font-bold"
-              style={{
-                fontSize: 'clamp(2.5rem, 8vw, 6rem)',
-                fontFamily: 'Inter, sans-serif',
-                color: '#009689',
-                lineHeight: '1.1',
-              }}
-            >
-              ส่วนหนึ่งของชีวิต
-            </h3>
-          </div>
-        </div>
-      </section>
-
       {/* Stats Section */}
       <section className="py-8 bg-[#009689]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -308,6 +258,56 @@ export default function HomepageTest() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Concept Section - From Figma node 5024-404 */}
+      <section className="relative w-full overflow-hidden py-16 lg:py-24">
+        {/* Background Image */}
+        <Image
+          src="/images/yadom/concept-bg-5024-404.png"
+          alt="Yadom Concept Background"
+          fill
+          className="object-cover object-center z-0"
+          sizes="100vw"
+        />
+        
+        {/* Gradient Overlay */}
+        <div
+          className="absolute inset-0 z-10"
+          style={{
+            background: 'linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(0,150,137,0.2) 50%, rgba(0,150,137,0.4) 100%)'
+          }}
+        />
+        
+        {/* Content Container */}
+        <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col items-center justify-center text-center">
+            {/* Text 1: "ไม่รู้ตัวเลยว่า...ยาดมกลายเป็น" */}
+            <h2 
+              className="text-white font-semibold mb-2"
+              style={{
+                fontSize: 'clamp(1.75rem, 5vw, 3.75rem)',
+                fontFamily: 'Inter, sans-serif',
+                textShadow: '0 2px 4px rgba(0,0,0,0.1)',
+              }}
+            >
+              ไม่รู้ตัวเลยว่า...ยาดมกลายเป็น
+            </h2>
+            
+            {/* Text 2: "ส่วนหนึ่งของชีวิต" */}
+            <h3 
+              className="font-bold"
+              style={{
+                fontSize: 'clamp(2.5rem, 8vw, 6rem)',
+                fontFamily: 'Inter, sans-serif',
+                color: '#009689',
+                lineHeight: '1.1',
+              }}
+            >
+              ส่วนหนึ่งของชีวิต
+            </h3>
           </div>
         </div>
       </section>
