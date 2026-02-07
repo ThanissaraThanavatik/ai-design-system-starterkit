@@ -116,7 +116,7 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-/* Primary Theme - From Primary.tokens8.json */
+/* Primary Theme - From Primary.tokens9.json */
 .primary {
   --radius: 0.625rem;
   --background: #FAFAFA;
@@ -135,7 +135,7 @@
   --accent-foreground: #FAFAFA;
   --destructive: #F87171;
   --border: #12A594;
-  --input: #E0F8F3;
+  --input: #737373;
   --ring: #83CDC1;
   --chart-1: #5EB1EF;
   --chart-2: #0090FF;
