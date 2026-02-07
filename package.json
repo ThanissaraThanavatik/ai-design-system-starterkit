@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "mcp:figma": "npx -y figma-context-mcp@latest",
+    "tokens:build": "style-dictionary build",
+    "tokens:clean": "rm -rf tokens/dist",
+    "tokens:full": "npm run tokens:clean && npm run tokens:build"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
