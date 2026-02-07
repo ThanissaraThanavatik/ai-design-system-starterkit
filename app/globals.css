@@ -116,7 +116,7 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-/* Primary Theme - From Primary.tokens6.json */
+/* Primary Theme - From Primary.tokens7.json */
 .primary {
   --radius: 0.625rem;
   --background: #FAFAFA;
@@ -127,7 +127,7 @@
   --popover-foreground: #FAFAFA;
   --primary: #009689;
   --primary-foreground: #FAFAFA;
-  --secondary: #008573;
+  --secondary: #CCF3EA;
   --secondary-foreground: #FAFAFA;
   --muted: #E5E5E5;
   --muted-foreground: #A3A3A3;
