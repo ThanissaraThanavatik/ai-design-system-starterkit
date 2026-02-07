@@ -8,6 +8,7 @@ import { CalendarIcon, Clock } from 'lucide-react'
 import { DateRange } from 'react-day-picker'
 
 import { cn } from '@/lib/utils'
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import { Calendar } from '@/components/ui/calendar'
 import { Label } from '@/components/ui/label'
@@ -74,11 +75,11 @@ export default function DatePickerPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Date Picker</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Date Picker</h1>
           <p className="text-lg text-muted-foreground">
             A date picker component with calendar popup for selecting dates.
           </p>
@@ -576,13 +577,7 @@ export default function DatePickerPage() {
           </div>
         </section>
 
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

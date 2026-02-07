@@ -85,8 +85,8 @@ export default function NativeSelectShowcase() {
   })
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
           <Link
@@ -94,14 +94,6 @@ export default function NativeSelectShowcase() {
             className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground mb-4"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Home
-          </Link>
-          <h1 className="text-4xl font-bold tracking-tight mb-4">Native Select</h1>
-          <p className="text-lg text-muted-foreground max-w-3xl">
-            A styled native HTML select element. Provides better mobile experience with native
-            OS pickers while maintaining consistent styling with the design system.
-          </p>
-        </div>
 
         {/* Default Native Select */}
         <Card className="mb-8">
@@ -607,6 +599,6 @@ export default function NativeSelectShowcase() {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

@@ -13,6 +13,7 @@ import {
   SidebarMenuButton,
   SidebarSeparator,
 } from '@/components/ui/sidebar'
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
@@ -21,14 +22,11 @@ import {
   Home,
   FileText,
   Image,
-  Video,
-  Music,
   FolderOpen,
   Folder,
   HardDrive,
   Clock,
   Star,
-  Trash2,
   Settings,
   HelpCircle,
   Search,
@@ -49,10 +47,6 @@ import {
   X,
   LogOut,
   ChevronRight,
-  Check,
-  Calendar,
-  Upload,
-  Download,
   Share2,
   Heart,
   Bookmark,
@@ -63,7 +57,8 @@ export default function SidebarShowcasePage() {
   const [collapsed, setCollapsed] = useState(false)
 
   return (
-    <div className="min-h-screen bg-background">
+    <ComponentLayout>
+      <div className="max-w-4xl">
       {/* Default Sidebar */}
       <section className="mb-12 border-b">
         <div className="flex">
@@ -1029,13 +1024,7 @@ export default function SidebarShowcasePage() {
           </div>
         </div>
       </section>
-
-      {/* Back to Home */}
-      <div className="text-center pt-8">
-        <Button asChild variant="outline">
-          <a href="/">← Back to Home</a>
-        </Button>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

@@ -42,6 +42,7 @@ import {
   Code,
   MoreHorizontal,
 } from 'lucide-react'
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import {
   ContextMenu,
@@ -72,11 +73,11 @@ export default function ContextMenuPage() {
   const [sortBy, setSortBy] = useState('name')
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Context Menu</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Context Menu</h1>
           <p className="text-lg text-muted-foreground">
             Displays a menu to the user — such as a set of actions or functions — triggered by right-click.
           </p>
@@ -588,13 +589,7 @@ export default function ContextMenuPage() {
           </div>
         </section>
 
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

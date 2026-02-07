@@ -1,6 +1,8 @@
 'use client'
 
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
+import { PropsTable } from '@/components/props-table'
 import {
   Mail,
   Download,
@@ -22,11 +24,11 @@ import {
 
 export default function ButtonShowcasePage() {
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Button</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Button</h1>
           <p className="text-lg text-muted-foreground">
             Displays a button or a component that looks like a button.
           </p>
@@ -375,13 +377,43 @@ export default function ButtonShowcasePage() {
           </div>
         </section>
 
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
+        {/* Props */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">Props</h2>
+          <p className="text-muted-foreground mb-6">
+            Available props for the Button component.
+          </p>
+          <PropsTable
+            props={[
+              {
+                name: 'variant',
+                type: '"default" | "destructive" | "outline" | "secondary" | "ghost" | "link"',
+                default: '"default"',
+                description: 'The visual style of the button',
+              },
+              {
+                name: 'size',
+                type: '"default" | "sm" | "lg" | "icon" | "icon-sm" | "icon-lg"',
+                default: '"default"',
+                description: 'The size of the button',
+              },
+              {
+                name: 'asChild',
+                type: 'boolean',
+                default: 'false',
+                description: 'When true, the button will be rendered as a child component',
+              },
+              {
+                name: 'disabled',
+                type: 'boolean',
+                default: 'false',
+                description: 'When true, the button will be disabled',
+              },
+            ]}
+          />
+        </section>
+
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

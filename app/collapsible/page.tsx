@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import {
   Collapsible,
@@ -18,11 +19,11 @@ export default function CollapsiblePage() {
   const [folderOpen2, setFolderOpen2] = useState(false)
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Collapsible</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Collapsible</h1>
           <p className="text-lg text-muted-foreground">
             An interactive component which expands/collapses a panel.
           </p>
@@ -285,14 +286,8 @@ export default function CollapsiblePage() {
           </div>
         </section>
 
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }
 

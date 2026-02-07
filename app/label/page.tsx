@@ -82,8 +82,8 @@ function ExtendedLabel({
 
 export default function LabelShowcase() {
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
           <Link
@@ -91,14 +91,6 @@ export default function LabelShowcase() {
             className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground mb-4"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Home
-          </Link>
-          <h1 className="text-4xl font-bold tracking-tight mb-4">Label</h1>
-          <p className="text-lg text-muted-foreground max-w-3xl">
-            A label component for form fields and inputs. Labels provide accessible text descriptions
-            that are associated with form controls for better usability and accessibility.
-          </p>
-        </div>
 
         {/* Default Labels */}
         <Card className="mb-8">
@@ -580,6 +572,6 @@ export default function LabelShowcase() {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

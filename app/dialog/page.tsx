@@ -18,6 +18,7 @@ import {
   X,
 } from 'lucide-react'
 
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -59,11 +60,11 @@ export default function DialogPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Dialog</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Dialog</h1>
           <p className="text-lg text-muted-foreground">
             A modal dialog that interrupts the user with important content and expects a response.
           </p>
@@ -693,13 +694,7 @@ export default function DialogPage() {
           </div>
         </section>
 
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

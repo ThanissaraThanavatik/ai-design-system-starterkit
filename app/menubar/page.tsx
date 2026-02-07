@@ -73,8 +73,8 @@ export default function MenubarShowcase() {
   const [textAlign, setTextAlign] = React.useState("left")
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
           <Link
@@ -82,14 +82,6 @@ export default function MenubarShowcase() {
             className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground mb-4"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Home
-          </Link>
-          <h1 className="text-4xl font-bold tracking-tight mb-4">Menubar</h1>
-          <p className="text-lg text-muted-foreground max-w-3xl">
-            A horizontal menu bar component typically used for application-level navigation.
-            Features dropdown menus, submenus, keyboard shortcuts, checkbox items, and radio groups.
-          </p>
-        </div>
 
         {/* Default Menubar */}
         <Card className="mb-8">
@@ -789,6 +781,6 @@ export default function MenubarShowcase() {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

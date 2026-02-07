@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Progress } from '@/components/ui/progress'
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import {
@@ -96,11 +97,11 @@ export default function ProgressShowcasePage() {
   }
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Progress</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Progress</h1>
           <p className="text-lg text-muted-foreground">
             Displays progress indicators for loading, uploading, and processing states.
           </p>
@@ -856,13 +857,7 @@ export default function ProgressShowcasePage() {
           </Card>
         </section>
 
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

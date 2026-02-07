@@ -7,6 +7,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '@/components/ui/popover'
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
 import { Input } from '@/components/ui/input'
@@ -50,11 +51,11 @@ export default function PopoverShowcasePage() {
   }
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Popover</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Popover</h1>
           <p className="text-lg text-muted-foreground">
             Displays rich content in a portal, triggered by a button or interactive element.
           </p>
@@ -757,15 +758,8 @@ export default function PopoverShowcasePage() {
             </table>
           </div>
         </section>
-
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }
 
@@ -806,8 +800,7 @@ function PopoverDemo() {
         <Button size="sm" variant="secondary" onClick={() => setOpen(!open)}>
           Toggle
         </Button>
-      </div>
-    </div>
+    </ComponentLayout>
   )
 }
 

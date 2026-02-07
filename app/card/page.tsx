@@ -1,6 +1,7 @@
 'use client'
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Switch } from '@/components/ui/switch'
@@ -36,11 +37,11 @@ export default function CardShowcasePage() {
   const [notifications, setNotifications] = useState(true)
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Card</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Card</h1>
           <p className="text-lg text-muted-foreground">
             A versatile container component for grouping related content and actions.
           </p>
@@ -767,14 +768,8 @@ export default function CardShowcasePage() {
           </div>
         </section>
 
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }
 

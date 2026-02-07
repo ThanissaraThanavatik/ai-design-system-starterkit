@@ -95,7 +95,8 @@ import {
 
 export default function TooltipPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <ComponentLayout>
+      <div className="max-w-4xl">
       <div className="border-b">
         <div className="container-wrapper py-16">
           <div className="mx-auto max-w-2xl text-center">
@@ -921,6 +922,6 @@ export default function TooltipPage() {
 
         </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

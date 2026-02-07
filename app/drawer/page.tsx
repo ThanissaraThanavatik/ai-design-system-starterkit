@@ -31,6 +31,7 @@ import {
   Heart,
 } from 'lucide-react'
 
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -75,11 +76,11 @@ export default function DrawerPage() {
   const total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0)
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Drawer</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Drawer</h1>
           <p className="text-lg text-muted-foreground">
             A drawer component that slides in from the edge of the screen.
           </p>
@@ -639,13 +640,7 @@ export default function DrawerPage() {
           </div>
         </section>
 
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

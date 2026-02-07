@@ -3,6 +3,7 @@
 import * as React from 'react'
 import { Checkbox } from '@/components/ui/checkbox'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Label } from '@/components/ui/label'
@@ -74,11 +75,11 @@ export default function CheckboxShowcasePage() {
   const someSelected = selectedItems.length > 0 && selectedItems.length < categories.length
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Checkbox</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Checkbox</h1>
           <p className="text-lg text-muted-foreground">
             A control that allows the user to toggle between checked and unchecked states.
           </p>
@@ -627,13 +628,7 @@ export default function CheckboxShowcasePage() {
           </Card>
         </section>
 
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

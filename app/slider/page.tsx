@@ -5,6 +5,7 @@ import { Slider } from "@/components/ui/slider"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import { Volume2, Sun, Settings, Droplet, Thermometer, Clock, DollarSign, Heart, Zap } from "lucide-react"
+import { ComponentLayout } from '@/components/component-layout'
 
 export default function SliderPage() {
   const [basicValue, setBasicValue] = React.useState([50])
@@ -18,7 +19,8 @@ export default function SliderPage() {
   const [multiValue, setMultiValue] = React.useState([25, 50, 75])
 
   return (
-    <div className="min-h-screen bg-background">
+    <ComponentLayout>
+      <div className="max-w-4xl">
       {/* Header */}
       <div className="border-b">
         <div className="container-wrapper py-16">
@@ -423,6 +425,6 @@ export default function SliderPage() {
 
         </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

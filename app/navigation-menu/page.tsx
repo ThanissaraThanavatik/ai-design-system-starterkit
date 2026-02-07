@@ -10,6 +10,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from '@/components/ui/navigation-menu'
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import {
   LayoutDashboard,
@@ -35,7 +36,8 @@ import {
 
 export default function NavigationMenuShowcasePage() {
   return (
-    <div className="min-h-screen bg-background">
+    <ComponentLayout>
+      <div className="max-w-4xl">
       {/* Hero Section with Navigation */}
       <div className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -936,14 +938,7 @@ export default function NavigationMenuShowcasePage() {
             </div>
           </div>
         </section>
-
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

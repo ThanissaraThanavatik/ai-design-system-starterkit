@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -32,11 +33,11 @@ export default function ComponentsPage() {
   const [progress, setProgress] = useState(65)
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Component Showcase</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Component Showcase</h1>
           <p className="text-lg text-muted-foreground">
             Interactive preview of all shadcn/ui components
           </p>
@@ -333,13 +334,7 @@ export default function ComponentsPage() {
           </CardContent>
         </Card>
 
-        {/* Back to Home */}
-        <div className="text-center">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

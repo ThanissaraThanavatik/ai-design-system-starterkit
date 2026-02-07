@@ -98,11 +98,11 @@ export default function ChartShowcasePage() {
   }
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Chart</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Chart</h1>
           <p className="text-lg text-muted-foreground">
             Beautiful and responsive charts powered by Recharts.
           </p>
@@ -444,17 +444,7 @@ export default function ChartShowcasePage() {
           </div>
         </section>
 
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Card>
-            <CardContent className="py-4">
-              <a href="/" className="text-muted-foreground hover:text-foreground transition-colors">
-                ← Back to Home
-              </a>
-            </CardContent>
-          </Card>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

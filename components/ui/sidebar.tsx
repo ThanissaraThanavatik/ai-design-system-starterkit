@@ -76,7 +76,7 @@ function SidebarContent({
     <div
       data-slot="sidebar-content"
       className={cn(
-        "flex-1 max-h-[calc(100vh-theme(spacing.8)-theme(spacing.4)-theme(spacing.6))] overflow-y-auto overflow-x-hidden",
+        "flex-1 overflow-y-auto overflow-x-hidden",
         className
       )}
       {...props}

@@ -13,6 +13,7 @@ import {
 } from 'lucide-react'
 
 import { cn } from '@/lib/utils'
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 
 interface KbdProps extends React.HTMLAttributes<HTMLElement> {
@@ -45,11 +46,11 @@ function Kbd({ className, variant = 'default', size = 'default', children, ...pr
 
 export default function KbdPage() {
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">KBD (Keyboard)</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">KBD (Keyboard)</h1>
           <p className="text-lg text-muted-foreground">
             Keyboard key component for displaying keyboard shortcuts and key combinations.
           </p>
@@ -450,13 +451,7 @@ export default function KbdPage() {
           </div>
         </section>
 
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

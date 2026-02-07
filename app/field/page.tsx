@@ -26,6 +26,7 @@ import {
 } from 'lucide-react'
 
 import { cn } from '@/lib/utils'
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -44,11 +45,11 @@ export default function FieldPage() {
   const maxBioLength = 200
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Field</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Field</h1>
           <p className="text-lg text-muted-foreground">
             Form field component combining label, input, helper text, and validation states.
           </p>
@@ -569,13 +570,7 @@ export default function FieldPage() {
           </div>
         </section>
 
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

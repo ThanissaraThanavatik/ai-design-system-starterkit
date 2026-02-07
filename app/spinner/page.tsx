@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Loader2, RefreshCw, Upload, Download, Search, Settings, CheckCircle2, UploadCloud, FileText, Image, Video } from "lucide-react"
+import { ComponentLayout } from '@/components/component-layout'
 
 export default function SpinnerPage() {
   const [loading, setLoading] = useState(false)
@@ -30,7 +31,8 @@ export default function SpinnerPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <ComponentLayout>
+      <div className="max-w-4xl">
       <div className="border-b">
         <div className="container-wrapper py-16">
           <div className="mx-auto max-w-2xl text-center">
@@ -449,6 +451,6 @@ export default function SpinnerPage() {
 
         </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

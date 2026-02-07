@@ -29,6 +29,7 @@ import {
   ArrowLeft,
 } from 'lucide-react'
 
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 
@@ -68,11 +69,11 @@ function EmptyState({
 
 export default function EmptyPage() {
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Empty State</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Empty State</h1>
           <p className="text-lg text-muted-foreground">
             Empty states inform users that there is no content to display and guide them on what to do next.
           </p>
@@ -471,13 +472,7 @@ export default function EmptyPage() {
           </div>
         </section>
 
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

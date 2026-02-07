@@ -45,7 +45,6 @@ const components = [
   { name: 'Popover', description: 'Popover tooltip component', href: '/popover' },
   { name: 'Tooltip', description: 'Tooltip component', href: '/tooltip' },
   { name: 'Form', description: 'Form builder component', href: '/form' },
-  { name: 'Select', description: 'Select dropdown component', href: '/select' },
   { name: 'Tabs', description: 'Tabbed content component', href: '/tabs' },
   { name: 'Slider', description: 'Range slider component', href: '/slider' },
   { name: 'Progress', description: 'Progress bar component', href: '/progress' },

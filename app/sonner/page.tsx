@@ -205,10 +205,9 @@ export default function SonnerPage() {
               <Star className="h-5 w-5 fill-yellow-500 text-yellow-500" />
             </button>
           ))}
-        </div>
-      </div>
-    )
-  }
+      </ComponentLayout>
+  )
+}
 
   // Connection status
   const showConnectionStatus = () => {
@@ -229,10 +228,9 @@ export default function SonnerPage() {
           <p className="text-sm text-muted-foreground truncate max-w-[200px]">
             Hey! How are you doing today?
           </p>
-        </div>
-      </div>
-    )
-  }
+      </ComponentLayout>
+  )
+}
 
   // Payment success
   const showPaymentSuccess = () => {
@@ -254,7 +252,8 @@ export default function SonnerPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <ComponentLayout>
+      <div className="max-w-4xl">
       {/* Header */}
       <div className="border-b">
         <div className="container-wrapper py-16">
@@ -581,6 +580,6 @@ export default function SonnerPage() {
 
         </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

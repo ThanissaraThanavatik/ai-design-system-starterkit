@@ -1,5 +1,6 @@
 'use client'
 
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 import {
@@ -16,11 +17,11 @@ import {
 
 export default function AlertPage() {
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Alert</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Alert</h1>
           <p className="text-lg text-muted-foreground">
             Displays a callout for user attention.
           </p>
@@ -186,13 +187,7 @@ export default function AlertPage() {
           </div>
         </section>
 
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

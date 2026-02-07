@@ -1,6 +1,7 @@
 'use client'
 
 import { ScrollArea } from '@/components/ui/scroll-area'
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -40,11 +41,11 @@ import {
 
 export default function ScrollAreaShowcasePage() {
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Scroll Area</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Scroll Area</h1>
           <p className="text-lg text-muted-foreground">
             A container that provides custom scrolling behavior with styled scrollbars.
           </p>
@@ -437,6 +438,7 @@ export default function ScrollAreaShowcasePage() {
               <ScrollArea className="h-80 rounded-md border bg-muted/50">
                 <pre className="p-4 text-sm">
                   <code>{`import { useState } from 'react'
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 
 export default function Component() {
@@ -647,13 +649,7 @@ export default function Component() {
           </Card>
         </section>
 
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }

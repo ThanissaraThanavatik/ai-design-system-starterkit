@@ -20,6 +20,7 @@ import {
   Eye,
   Copy,
 } from 'lucide-react'
+import { ComponentLayout } from '@/components/component-layout'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Checkbox } from '@/components/ui/checkbox'
@@ -220,11 +221,11 @@ export default function DataTablePage() {
   }
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <ComponentLayout>
+      <div className="max-w-4xl">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Data Table</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Data Table</h1>
           <p className="text-lg text-muted-foreground">
             Powerful table component for displaying and managing data.
           </p>
@@ -650,13 +651,7 @@ export default function DataTablePage() {
           </div>
         </section>
 
-        {/* Back to Home */}
-        <div className="text-center pt-8">
-          <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
-          </Button>
-        </div>
       </div>
-    </div>
+    </ComponentLayout>
   )
 }
