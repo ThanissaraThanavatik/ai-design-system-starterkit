@@ -9,11 +9,11 @@ import { ThemeToggle } from '@/components/ui/theme-toggle'
 import { cn } from '@/lib/utils'
 
 const navItems = [
-  { href: '/(site)', label: 'หน้าแรก' },
-  { href: '/(site)/about', label: 'เกี่ยวกับ' },
-  { href: '/(site)/services', label: 'บริการ' },
-  { href: '/(site)/works', label: 'ผลงาน' },
-  { href: '/(site)/contact', label: 'ติดต่อ' },
+  { href: '', label: 'หน้าแรก' },
+  { href: '/about', label: 'เกี่ยวกับ' },
+  { href: '/services', label: 'บริการ' },
+  { href: '/works', label: 'ผลงาน' },
+  { href: '/contact', label: 'ติดต่อ' },
 ]
 
 export function SiteHeader() {
@@ -25,7 +25,7 @@ export function SiteHeader() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/(site)" className="flex items-center space-x-2">
+          <Link href="" className="flex items-center space-x-2">
             <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">B</span>
             </div>

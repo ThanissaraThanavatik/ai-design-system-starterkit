@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowRight, Check, Star, Zap, Shield, Users } from 'lucide-react'
+import { ArrowRight, Check, Star, Zap, Shield, Users, TrendingUp, Award } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
   Card,
@@ -12,50 +12,55 @@ import {
 const features = [
   {
     icon: Zap,
-    title: 'รวดเร็วทันใจ',
-    description: 'เว็บไซต์ที่โหลดเร็ว ให้ผู้ใช้งานได้รับประสบการณ์ที่ดีที่สุด',
+    title: 'ประสิทธิภาพสูง',
+    description: 'เว็บไซต์ที่โหลดเร็ว ตอบสนองทันที ให้ผู้ใช้งานได้รับประสบการณ์ที่ดีที่สุด',
   },
   {
     icon: Shield,
-    title: 'ปลอดภัย',
-    description: 'ระบบรักษาความปลอดภัยระดับสูง ปกป้องข้อมูลของคุณ',
+    title: 'ความปลอดภัย',
+    description: 'ระบบรักษาความปลอดภัยระดับสูง ปกป้องข้อมูลและธุรกิจของคุณ',
   },
   {
-    icon: Users,
-    title: 'ใช้งานง่าย',
-    description: 'ออกแบบมาเพื่อให้ผู้ใช้งานเข้าใจได้ทันที ไม่ต้องเรียนรู้',
+    icon: TrendingUp,
+    title: 'เติบโตได้จริง',
+    description: 'ออกแบบมาเพื่อสนับสนุนการเติบโตของธุรกิจอย่างยั่งยืน',
+  },
+  {
+    icon: Award,
+    title: 'คุณภาพระดับมืออาชีพ',
+    description: 'ทีมงานผู้เชี่ยวชาญพร้อมส่งมอบงานที่มีคุณภาพสูงสุด',
   },
 ]
 
 const stats = [
-  { value: '500+', label: 'โปรเจคที่สำเร็จ' },
-  { value: '98%', label: 'ลูกค้าพึงพอใจ' },
-  { value: '24/7', label: 'บริการตลอดเวลา' },
-  { value: '10+', label: 'ปีประสบการณ์' },
+  { value: '1000+', label: 'โปรเจคสำเร็จ' },
+  { value: '99%', label: 'ความพึงพอใจ' },
+  { value: '24/7', label: 'ซัพพอร์ต' },
+  { value: '15+', label: 'ปีประสบการณ์' },
 ]
 
 const testimonials = [
   {
-    name: 'คุณสมชาย',
-    role: 'CEO, บริษัท ABC',
-    content: 'บริการดีมาก ทีมงานเป็นมืออาชีพ ส่งงานตรงเวลา แนะนำเลยครับ',
+    name: 'คุณวิชัย',
+    role: 'CEO, TechCorp',
+    content: 'ทีมงานมืออาชีพมาก ส่งงานตรงเวลา และคุณภาพเกินคาด',
     rating: 5,
   },
   {
-    name: 'คุณสุดา',
-    role: 'Marketing Manager',
-    content: 'เว็บไซต์สวยงาม ทันสมัย ช่วยให้ธุรกิจของเราเติบโตขึ้นมาก',
+    name: 'คุณนภา',
+    role: 'Marketing Director',
+    content: 'เว็บไซต์ช่วยให้ยอดขายเพิ่มขึ้น 200% ภายใน 3 เดือน',
     rating: 5,
   },
   {
-    name: 'คุณประเสริฐ',
-    role: 'เจ้าของธุรกิจ',
-    content: 'ประทับใจในคุณภาพงาน ราคาเหมาะสม จะกลับมาใช้บริการอีกแน่นอน',
+    name: 'คุณสมศักดิ์',
+    role: 'Founder',
+    content: 'บริการดีเยี่ยม ดูแลลูกค้าตลอดการใช้งาน แนะนำเลย',
     rating: 5,
   },
 ]
 
-export default function HomePage() {
+export default function SiteHomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -66,25 +71,25 @@ export default function HomePage() {
             <div className="flex-1 text-center lg:text-left">
               <div className="inline-flex items-center rounded-full border px-3 py-1 text-sm font-medium mb-6">
                 <span className="flex h-2 w-2 rounded-full bg-primary mr-2"></span>
-                เปิดให้บริการแล้ววันนี้
+                ยินดีต้อนรับสู่ Business
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-                สร้างเว็บไซต์
+                พัฒนาธุรกิจของคุณ
                 <br />
-                <span className="text-primary">ที่ดีที่สุด</span>
+                <span className="text-primary">ให้เติบโต</span>
                 <br />
-                สำหรับธุรกิจคุณ
+                อย่างยั่งยืน
               </h1>
               
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
-                เราช่วยคุณสร้างเว็บไซต์ที่สวยงาม ทันสมัย และมีประสิทธิภาพ 
-                ด้วยทีมงานมืออาชีพและเทคโนโลยีล่าสุด
+                เราคือพันธมิตรที่จะช่วยธุรกิจของคุณเติบโตในโลกดิจิทัล 
+                ด้วยโซลูชันที่ครบครันและทีมงานมืออาชีพ
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button size="lg" className="text-lg">
-                  เริ่มต้นใช้งาน
+                  เริ่มต้นเลย
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg">
@@ -99,11 +104,11 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center">
                   <Check className="h-4 w-4 text-primary mr-1" />
-                  ไม่มีค่าใช้จ่ายแอบแฝง
+                  รับประกันผลงาน
                 </div>
                 <div className="flex items-center">
                   <Check className="h-4 w-4 text-primary mr-1" />
-                  รับประกันคุณภาพ
+                  ซัพพอร์ตตลอดชีพ
                 </div>
               </div>
             </div>
@@ -115,9 +120,9 @@ export default function HomePage() {
                   <div className="aspect-[4/3] bg-muted flex items-center justify-center">
                     <div className="text-center p-8">
                       <div className="h-24 w-24 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                        <span className="text-4xl">🚀</span>
+                        <span className="text-4xl">💼</span>
                       </div>
-                      <p className="text-muted-foreground">Hero Image Placeholder</p>
+                      <p className="text-muted-foreground">Business Solutions</p>
                     </div>
                   </div>
                 </div>
@@ -147,12 +152,12 @@ export default function HomePage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">ทำไมต้องเลือกเรา?</h2>
             <p className="text-lg text-muted-foreground">
-              เรามุ่งมั่นพัฒนาเว็บไซต์ที่ตอบโจทย์ธุรกิจของคุณ 
+              เรามุ่งมั่นพัฒนาโซลูชันที่ตอบโจทย์ธุรกิจของคุณ 
               ด้วยคุณสมบัติที่ครบครันและทันสมัย
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {features.map((feature) => (
               <Card key={feature.title} className="border-0 shadow-lg">
                 <CardHeader>
@@ -174,12 +179,12 @@ export default function HomePage() {
       <section className="py-20 lg:py-32 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-            พร้อมที่จะเริ่มต้นโปรเจคของคุณ?
+            พร้อมที่จะพัฒนาธุรกิจของคุณ?
           </h2>
           
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
             ติดต่อเราวันนี้เพื่อรับคำปรึกษาฟรี 
-            และเริ่มต้นสร้างเว็บไซต์ที่ดีที่สุดสำหรับธุรกิจของคุณ
+            และเริ่มต้นการเติบโตที่ยั่งยืนสำหรับธุรกิจของคุณ
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -188,7 +193,7 @@ export default function HomePage() {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button size="lg" variant="outline" className="text-lg border-primary-foreground/20 hover:bg-primary-foreground/10">
-              ดูแพ็คเกจราคา
+              ดูแพ็คเกจ
             </Button>
           </div>
         </div>
@@ -200,7 +205,7 @@ export default function HomePage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">ลูกค้าของเราพูดอย่างไร?</h2>
             <p className="text-lg text-muted-foreground">
-              ฟังความคิดเห็นจากลูกค้าที่ไว้วางใจให้เราดูแลโปรเจคของพวกเขา
+              ฟังความคิดเห็นจากลูกค้าที่ไว้วางใจให้เราดูแลธุรกิจของพวกเขา
             </p>
           </div>
 

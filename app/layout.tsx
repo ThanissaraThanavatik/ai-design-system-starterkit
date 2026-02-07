@@ -3,8 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
-import { WebsiteHeader } from "./components/website-header";
-import { WebsiteFooter } from "./components/website-footer";
+import { SiteHeader } from "./components/site-header";
+import { SiteFooter } from "./components/site-footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,12 +17,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Modern Website - Powered by shadcn/ui",
-  description: "A modern responsive website built with Next.js, shadcn/ui components, and Tailwind CSS",
-  keywords: ["nextjs", "shadcn", "ui", "tailwind", "responsive", "modern"],
+  title: "Modern Business - Professional Web Solutions",
+  description: "Professional web design and development services for your business success",
+  keywords: ["web design", "development", "business", "modern", "responsive"],
 };
 
-export default function WebsiteLayout({
+export default function SiteLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -40,9 +40,9 @@ export default function WebsiteLayout({
           themes={['light', 'dark', 'primary', 'system']}
         >
           <div className="relative flex min-h-screen flex-col">
-            <WebsiteHeader />
+            <SiteHeader />
             <main className="flex-1">{children}</main>
-            <WebsiteFooter />
+            <SiteFooter />
           </div>
           <Toaster />
         </ThemeProvider>

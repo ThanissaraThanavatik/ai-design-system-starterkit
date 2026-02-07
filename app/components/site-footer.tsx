@@ -4,22 +4,22 @@ import { Separator } from '@/components/ui/separator'
 
 const footerLinks = {
   services: [
-    { label: 'ออกแบบเว็บไซต์', href: '/(site)/services/web-design' },
-    { label: 'พัฒนาระบบ', href: '/(site)/services/development' },
-    { label: 'Marketing', href: '/(site)/services/marketing' },
-    { label: 'Consulting', href: '/(site)/services/consulting' },
+    { label: 'ออกแบบเว็บไซต์', href: '/services/web-design' },
+    { label: 'พัฒนาระบบ', href: '/services/development' },
+    { label: 'Marketing', href: '/services/marketing' },
+    { label: 'Consulting', href: '/services/consulting' },
   ],
   company: [
-    { label: 'เกี่ยวกับเรา', href: '/(site)/about' },
-    { label: 'ทีมงาน', href: '/(site)/team' },
-    { label: 'ร่วมงานกับเรา', href: '/(site)/careers' },
-    { label: 'ข่าวสาร', href: '/(site)/news' },
+    { label: 'เกี่ยวกับเรา', href: '/about' },
+    { label: 'ทีมงาน', href: '/team' },
+    { label: 'ร่วมงานกับเรา', href: '/careers' },
+    { label: 'ข่าวสาร', href: '/news' },
   ],
   support: [
-    { label: 'ติดต่อเรา', href: '/(site)/contact' },
-    { label: 'FAQ', href: '/(site)/faq' },
-    { label: 'Help Center', href: '/(site)/help' },
-    { label: 'Privacy Policy', href: '/(site)/privacy' },
+    { label: 'ติดต่อเรา', href: '/contact' },
+    { label: 'FAQ', href: '/faq' },
+    { label: 'Help Center', href: '/help' },
+    { label: 'Privacy Policy', href: '/privacy' },
   ],
 }
 
@@ -37,7 +37,7 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <Link href="/(site)" className="flex items-center space-x-2 mb-4">
+            <Link href="" className="flex items-center space-x-2 mb-4">
               <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-lg">B</span>
               </div>
@@ -136,8 +136,8 @@ export function SiteFooter() {
             © {new Date().getFullYear()} Business. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-muted-foreground">
-            <Link href="/(site)/privacy" className="hover:text-primary">Privacy Policy</Link>
-            <Link href="/(site)/terms" className="hover:text-primary">Terms of Service</Link>
+            <Link href="/privacy" className="hover:text-primary">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-primary">Terms of Service</Link>
           </div>
         </div>
       </div>
