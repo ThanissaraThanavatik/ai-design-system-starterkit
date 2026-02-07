@@ -116,7 +116,7 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-/* Primary Theme - Green/Teal from Figma */
+/* Primary Theme - From Primary.tokens1.json */
 .primary {
   --radius: 0.625rem;
   --background: #009689;
@@ -125,7 +125,7 @@
   --card-foreground: #FAFAFA;
   --popover: #262626;
   --popover-foreground: #FAFAFA;
-  --primary: #14532D;
+  --primary: #064E3B;
   --primary-foreground: #171717;
   --secondary: #262626;
   --secondary-foreground: #FAFAFA;
@@ -138,17 +138,17 @@
   --input: #171717;
   --ring: #737373;
   --chart-1: #5EB1EF;
-  --chart-2: #30A46C;
-  --chart-3: #F5A623;
-  --chart-4: #F87171;
-  --chart-5: #9B87F5;
-  --sidebar: #009689;
-  --sidebar-foreground: #FAFAFA;
-  --sidebar-primary: #14532D;
-  --sidebar-primary-foreground: #FAFAFA;
-  --sidebar-accent: #047857;
+  --chart-2: #0090FF;
+  --chart-3: #0588F0;
+  --chart-4: #0D74CE;
+  --chart-5: #113264;
+  --sidebar: #ECFDF5;
+  --sidebar-foreground: #022C22;
+  --sidebar-primary: #171717;
+  --sidebar-primary-foreground: #ECFDF5;
+  --sidebar-accent: #262626;
   --sidebar-accent-foreground: #FAFAFA;
-  --sidebar-border: #047857;
+  --sidebar-border: #FFFFFF;
   --sidebar-ring: #737373;
 }
 
