@@ -6,6 +6,9 @@
       "env": {
         "FIGMA_API_KEY": "${FIGMA_API_TOKEN}"
       }
+    },
+    "figma-remote-mcp": {
+      "url": "https://mcp.figma.com/mcp"
     }
   }
 }
