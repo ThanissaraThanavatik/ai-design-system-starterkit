@@ -312,6 +312,178 @@ export default function HomepageTest() {
         </div>
       </section>
 
+      {/* Why You Use Our Product Section - From Figma node 5024-375 */}
+      <section id="why-use" className="py-16 lg:py-24 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Title Section */}
+          <div className="text-center mb-12 lg:mb-16">
+            <h2 
+              className="font-semibold text-[#009689] mb-6"
+              style={{
+                fontSize: 'clamp(2rem, 5vw, 3.75rem)',
+                fontFamily: 'Inter, sans-serif',
+                lineHeight: '1',
+              }}
+            >
+              "ชิวๆแต่ติดใจ"
+            </h2>
+            <p 
+              className="text-[#737373] max-w-3xl mx-auto"
+              style={{
+                fontSize: 'clamp(1rem, 2.5vw, 1.5rem)',
+                fontFamily: 'Inter, sans-serif',
+                lineHeight: '1.33',
+              }}
+            >
+              ผลิตภัณฑ์คุณภาพที่ตอบโจทย์ทุกความต้องการ ด้วยส่วนผสมจากธรรมชาติ
+            </p>
+          </div>
+
+          {/* Feature Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Card 1: Natural Ingredients */}
+            <Card className="border border-[#e5e5e5] bg-white hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-6">
+                <div className="w-12 h-12 mb-4 flex items-center justify-center">
+                  <Image
+                    src="/images/yadom/icon-leaf.svg"
+                    alt="Natural Ingredients"
+                    width={48}
+                    height={48}
+                    className="text-[#009689]"
+                  />
+                </div>
+                <h3 
+                  className="font-semibold text-[#0a0a0a] mb-2"
+                  style={{
+                    fontSize: '1.25rem',
+                    fontFamily: 'Inter, sans-serif',
+                    lineHeight: '1.2',
+                  }}
+                >
+                  ส่วนผสมจากสมุนไพรธรรมชาติ
+                </h3>
+                <p 
+                  className="text-[#737373]"
+                  style={{
+                    fontSize: '1rem',
+                    fontFamily: 'Inter, sans-serif',
+                    lineHeight: '1.5',
+                  }}
+                >
+                  สารสกัดจากสมุนไพรไทย ปลอดภัย ไร้สารเคมีเป็นพิษ
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Card 2: Portable */}
+            <Card className="border border-[#e5e5e5] bg-white hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-6">
+                <div className="w-12 h-12 mb-4 flex items-center justify-center">
+                  <Image
+                    src="/images/yadom/icon-luggage.svg"
+                    alt="Portable"
+                    width={48}
+                    height={48}
+                    className="text-[#009689]"
+                  />
+                </div>
+                <h3 
+                  className="font-semibold text-[#0a0a0a] mb-2"
+                  style={{
+                    fontSize: '1.25rem',
+                    fontFamily: 'Inter, sans-serif',
+                    lineHeight: '1.2',
+                  }}
+                >
+                  พกพาง่าย ใช้ได้ทุกที่ทุกเวลา
+                </h3>
+                <p 
+                  className="text-[#737373]"
+                  style={{
+                    fontSize: '1rem',
+                    fontFamily: 'Inter, sans-serif',
+                    lineHeight: '1.5',
+                  }}
+                >
+                  "เพื่อนคู่ใจ ไปได้ทุกที่" ขนาดกะทัดรัด พร้อมดูแลคุณตลอดวัน
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Card 3: Relief */}
+            <Card className="border border-[#e5e5e5] bg-white hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-6">
+                <div className="w-12 h-12 mb-4 flex items-center justify-center">
+                  <Image
+                    src="/images/yadom/icon-wind.svg"
+                    alt="Relief"
+                    width={48}
+                    height={48}
+                    className="text-[#009689]"
+                  />
+                </div>
+                <h3 
+                  className="font-semibold text-[#0a0a0a] mb-2"
+                  style={{
+                    fontSize: '1.25rem',
+                    fontFamily: 'Inter, sans-serif',
+                    lineHeight: '1.2',
+                  }}
+                >
+                  บรรเทาอาการวิงเวียน ปวดหัว
+                </h3>
+                <p 
+                  className="text-[#737373]"
+                  style={{
+                    fontSize: '1rem',
+                    fontFamily: 'Inter, sans-serif',
+                    lineHeight: '1.5',
+                  }}
+                >
+                  ช่วยบรรเทาอาการไม่สบายได้อย่างรวดเร็ว
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Card 4: Fresh Scent */}
+            <Card className="border border-[#e5e5e5] bg-white hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-6">
+                <div className="w-12 h-12 mb-4 flex items-center justify-center">
+                  <Image
+                    src="/images/yadom/icon-stars.svg"
+                    alt="Fresh Scent"
+                    width={48}
+                    height={48}
+                    className="text-[#009689]"
+                  />
+                </div>
+                <h3 
+                  className="font-semibold text-[#0a0a0a] mb-2"
+                  style={{
+                    fontSize: '1.25rem',
+                    fontFamily: 'Inter, sans-serif',
+                    lineHeight: '1.2',
+                  }}
+                >
+                  กลิ่นหอมสดชื่น ตื่นตัวทันที
+                </h3>
+                <p 
+                  className="text-[#737373]"
+                  style={{
+                    fontSize: '1rem',
+                    fontFamily: 'Inter, sans-serif',
+                    lineHeight: '1.5',
+                  }}
+                >
+                  กลิ่นหอมจากธรรมชาติ ช่วยให้รู้สึกสดชื่น กระปรี้กระเปร่า
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Product Details Section */}
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
