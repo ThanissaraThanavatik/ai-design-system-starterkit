@@ -484,57 +484,6 @@ export default function HomepageTest() {
         </div>
       </section>
 
-      {/* Product Details Section */}
-      <section className="py-16 lg:py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
-            {/* Product Image */}
-            <div className="flex-1 w-full max-w-md">
-              <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-br from-[#009689]/10 to-transparent rounded-3xl" />
-                <Card className="relative border border-[#e5e5e5] shadow-sm overflow-hidden">
-                  <div className="aspect-[4/3] bg-[#fafafa] flex items-center justify-center p-6">
-                    <Image
-                      src="/images/yadom/5024-728.png"
-                      alt="Yadom Product Details"
-                      width={400}
-                      height={300}
-                      className="object-contain"
-                    />
-                  </div>
-                </Card>
-              </div>
-            </div>
-
-            {/* Product Info */}
-            <div className="flex-1">
-              <Badge className="mb-3 bg-[#009689]/10 text-[#009689] border-[#009689]/20">ส่วนผสม</Badge>
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#0a0a0a] mb-4">
-                สมุนไพรไทย 8 ชนิด
-              </h2>
-              <p className="text-base text-[#525252] mb-6">
-                ผสมผสานสมุนไพรไทยคุณภาพสูง ที่มีสรรพคุณช่วยให้หายใจสะดวก 
-                ลดอาการคัดจมูก และผ่อนคลายอย่างเป็นธรรมชาติ
-              </p>
-
-              <div className="space-y-3 mb-6">
-                {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center text-sm text-[#525252]">
-                    <Check className="h-4 w-4 text-[#009689] mr-3 flex-shrink-0" />
-                    <span>{benefit.replace('✓ ', '')}</span>
-                  </div>
-                ))}
-              </div>
-
-              <Button className="bg-[#009689] hover:bg-[#00897d] text-white font-medium px-6 h-11 rounded-md shadow-[0_1px_2px_0_rgb(0_0_0_/_0.1)]">
-                สั่งซื้อเลย
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials Section */}
       <section id="reviews" className="py-16 lg:py-24 bg-[#fafafa]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
