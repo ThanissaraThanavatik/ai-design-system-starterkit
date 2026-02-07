@@ -1,168 +1,236 @@
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import Link from 'next/link'
+import { ArrowRight, Check, Star, Zap, Shield, Users } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
 
-const components = [
-  { name: 'Button', description: 'Interactive button component', href: '/button' },
-  { name: 'Card', description: 'Container component for grouped content', href: '/card' },
-  { name: 'Badge', description: 'Label component', href: '/badge' },
-  { name: 'Alert', description: 'Alert notification component', href: '/alert' },
-  { name: 'Accordion', description: 'Expandable accordion component', href: '/accordion' },
-  { name: 'Breadcrumb', description: 'Navigation breadcrumb component', href: '/breadcrumb' },
-  { name: 'Avatar', description: 'User avatar component', href: '/avatar' },
-  { name: 'Checkbox', description: 'Checkbox input component', href: '/checkbox' },
-  { name: 'Collapsible', description: 'Expandable/collapsible panel component', href: '/collapsible' },
-  { name: 'Combobox', description: 'Autocomplete input with suggestions', href: '/combobox' },
-  { name: 'Command', description: 'Command palette and menu component', href: '/command' },
-  { name: 'Context Menu', description: 'Right-click context menu component', href: '/context-menu' },
-  { name: 'Data Table', description: 'Powerful table for displaying data', href: '/data-table' },
-  { name: 'Date Picker', description: 'Date selection with calendar popup', href: '/date-picker' },
-  { name: 'Dialog', description: 'Modal dialog component', href: '/dialog' },
-  { name: 'Drawer', description: 'Slide-in panel from screen edge', href: '/drawer' },
-  { name: 'Empty', description: 'Empty state placeholder component', href: '/empty' },
-  { name: 'Field', description: 'Form field with label and validation', href: '/field' },
-  { name: 'Hover Card', description: 'Preview content on hover', href: '/hover-card' },
-  { name: 'Input', description: 'Text input field component', href: '/input' },
-  { name: 'Input Group', description: 'Combined input with addons and buttons', href: '/input-group' },
-  { name: 'Input OTP', description: 'One-time password input component', href: '/input-otp' },
-  { name: 'Item', description: 'Versatile list item component', href: '/item' },
-  { name: 'KPI', description: 'Key performance indicator cards', href: '/kpi' },
-  { name: 'KBD', description: 'Keyboard key and shortcut display', href: '/kbd' },
-  { name: 'Label', description: 'Accessible label for form controls', href: '/label' },
-  { name: 'Menubar', description: 'Horizontal menu bar for applications', href: '/menubar' },
-  { name: 'Navigation Menu', description: 'Horizontal navigation with dropdowns', href: '/navigation-menu' },
-  { name: 'Native Select', description: 'Styled native HTML select element', href: '/native-select' },
-  { name: 'Radio Group', description: 'Radio button group component', href: '/radio-group' },
-  { name: 'Scroll Area', description: 'Scrollable container with custom styling', href: '/scroll-area' },
-  { name: 'Select', description: 'Select dropdown component', href: '/select' },
-  { name: 'Separator', description: 'Visual separator/divider component', href: '/separator' },
-  { name: 'Sheet', description: 'Slide-over panel component', href: '/sheet' },
-  { name: 'Sidebar', description: 'Navigation sidebar component', href: '/sidebar' },
-  { name: 'Sonner', description: 'Toast notification component', href: '/sonner' },
-  { name: 'Spinner', description: 'Loading spinner component', href: '/spinner' },
-  { name: 'Switch', description: 'Toggle switch component', href: '/switch' },
-  { name: 'Dropdown Menu', description: 'Dropdown menu component', href: '/dropdown-menu' },
-  { name: 'Popover', description: 'Popover tooltip component', href: '/popover' },
-  { name: 'Tooltip', description: 'Tooltip component', href: '/tooltip' },
-  { name: 'Form', description: 'Form builder component', href: '/form' },
-  { name: 'Tabs', description: 'Tabbed content component', href: '/tabs' },
-  { name: 'Slider', description: 'Range slider component', href: '/slider' },
-  { name: 'Progress', description: 'Progress bar component', href: '/progress' },
-  { name: 'Pagination', description: 'Pagination component', href: '/pagination' },
-  { name: 'Table', description: 'Data table component', href: '/table' },
-  { name: 'Carousel', description: 'Image carousel component', href: '/carousel' },
-  { name: 'Calendar', description: 'Date picker calendar', href: '/calendar' },
-  { name: 'Skeleton', description: 'Loading skeleton', href: '/skeleton' },
+const features = [
+  {
+    icon: Zap,
+    title: 'รวดเร็วทันใจ',
+    description: 'เว็บไซต์ที่โหลดเร็ว ให้ผู้ใช้งานได้รับประสบการณ์ที่ดีที่สุด',
+  },
+  {
+    icon: Shield,
+    title: 'ปลอดภัย',
+    description: 'ระบบรักษาความปลอดภัยระดับสูง ปกป้องข้อมูลของคุณ',
+  },
+  {
+    icon: Users,
+    title: 'ใช้งานง่าย',
+    description: 'ออกแบบมาเพื่อให้ผู้ใช้งานเข้าใจได้ทันที ไม่ต้องเรียนรู้',
+  },
 ]
 
-export default function Home() {
+const stats = [
+  { value: '500+', label: 'โปรเจคที่สำเร็จ' },
+  { value: '98%', label: 'ลูกค้าพึงพอใจ' },
+  { value: '24/7', label: 'บริการตลอดเวลา' },
+  { value: '10+', label: 'ปีประสบการณ์' },
+]
+
+const testimonials = [
+  {
+    name: 'คุณสมชาย',
+    role: 'CEO, บริษัท ABC',
+    content: 'บริการดีมาก ทีมงานเป็นมืออาชีพ ส่งงานตรงเวลา แนะนำเลยครับ',
+    rating: 5,
+  },
+  {
+    name: 'คุณสุดา',
+    role: 'Marketing Manager',
+    content: 'เว็บไซต์สวยงาม ทันสมัย ช่วยให้ธุรกิจของเราเติบโตขึ้นมาก',
+    rating: 5,
+  },
+  {
+    name: 'คุณประเสริฐ',
+    role: 'เจ้าของธุรกิจ',
+    content: 'ประทับใจในคุณภาพงาน ราคาเหมาะสม จะกลับมาใช้บริการอีกแน่นอน',
+    rating: 5,
+  },
+]
+
+export default function HomePage() {
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <div className="mb-12 text-center">
-          <h1 className="text-4xl font-bold tracking-tight mb-4">
-            shadcn/ui Starter Kit
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A production-ready Next.js starter kit with shadcn/ui components, design tokens, and Tailwind CSS configured.
-          </p>
-        </div>
+    <div className="flex flex-col">
+      {/* Hero Section */}
+      <section className="relative py-20 lg:py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-background" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <div className="flex-1 text-center lg:text-left">
+              <div className="inline-flex items-center rounded-full border px-3 py-1 text-sm font-medium mb-6">
+                <span className="flex h-2 w-2 rounded-full bg-primary mr-2"></span>
+                เปิดให้บริการแล้ววันนี้
+              </div>
+              
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+                สร้างเว็บไซต์
+                <br />
+                <span className="text-primary">ที่ดีที่สุด</span>
+                <br />
+                สำหรับธุรกิจคุณ
+              </h1>
+              
+              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
+                เราช่วยคุณสร้างเว็บไซต์ที่สวยงาม ทันสมัย และมีประสิทธิภาพ 
+                ด้วยทีมงานมืออาชีพและเทคโนโลยีล่าสุด
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button size="lg" className="text-lg">
+                  เริ่มต้นใช้งาน
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+                <Button size="lg" variant="outline" className="text-lg">
+                  ดูผลงาน
+                </Button>
+              </div>
 
-        {/* Features */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-lg">Next.js 15</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground">
-                Latest Next.js with App Router and Server Components
-              </p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-lg">shadcn/ui</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground">
-                50+ beautifully designed, customizable components
-              </p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-lg">Design System</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground">
-                Complete design tokens and Tailwind configuration
-              </p>
-            </CardContent>
-          </Card>
-        </div>
+              <div className="mt-8 flex items-center justify-center lg:justify-start space-x-4 text-sm text-muted-foreground">
+                <div className="flex items-center">
+                  <Check className="h-4 w-4 text-primary mr-1" />
+                  ฟรีคอนซัลต์
+                </div>
+                <div className="flex items-center">
+                  <Check className="h-4 w-4 text-primary mr-1" />
+                  ไม่มีค่าใช้จ่ายแอบแฝง
+                </div>
+                <div className="flex items-center">
+                  <Check className="h-4 w-4 text-primary mr-1" />
+                  รับประกันคุณภาพ
+                </div>
+              </div>
+            </div>
 
-        {/* Components Grid */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-8">Available Components</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {components.map((component) => (
-              <Link key={component.name} href={component.href}>
-                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-                  <CardHeader>
-                    <CardTitle className="text-base">{component.name}</CardTitle>
-                    <CardDescription>{component.description}</CardDescription>
-                  </CardHeader>
-                </Card>
-              </Link>
+            <div className="flex-1 w-full max-w-lg lg:max-w-none">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-primary/0 rounded-3xl blur-3xl" />
+                <div className="relative bg-card border rounded-2xl shadow-2xl overflow-hidden">
+                  <div className="aspect-[4/3] bg-muted flex items-center justify-center">
+                    <div className="text-center p-8">
+                      <div className="h-24 w-24 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                        <span className="text-4xl">🚀</span>
+                      </div>
+                      <p className="text-muted-foreground">Hero Image Placeholder</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-12 border-y bg-muted/50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            {stats.map((stat) => (
+              <div key={stat.label} className="text-center">
+                <div className="text-3xl lg:text-4xl font-bold text-primary">{stat.value}</div>
+                <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
+              </div>
             ))}
           </div>
         </div>
+      </section>
 
-        {/* Quick Start */}
-        <Card className="mb-12 bg-primary/5 border-primary/20">
-          <CardHeader>
-            <CardTitle>Quick Start</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div>
-              <h4 className="font-semibold mb-2">Project Structure</h4>
-              <ul className="text-sm text-muted-foreground space-y-1 ml-4">
-                <li>• <code className="bg-muted px-2 py-1 rounded">/app</code> - Next.js App Router pages</li>
-                <li>• <code className="bg-muted px-2 py-1 rounded">/components</code> - shadcn/ui components</li>
-                <li>• <code className="bg-muted px-2 py-1 rounded">/lib</code> - Utilities and helpers</li>
-                <li>• <code className="bg-muted px-2 py-1 rounded">/hooks</code> - Custom React hooks</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-2">Design Tokens</h4>
-              <p className="text-sm text-muted-foreground">
-                Access design tokens from <code className="bg-muted px-2 py-1 rounded">lib/design-tokens.ts</code>
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-2">Available Hooks</h4>
-              <ul className="text-sm text-muted-foreground space-y-1 ml-4">
-                <li>• <code className="bg-muted px-2 py-1 rounded">useMobile()</code> - Detect mobile screen</li>
-                <li>• <code className="bg-muted px-2 py-1 rounded">useDebounce()</code> - Debounce values</li>
-                <li>• <code className="bg-muted px-2 py-1 rounded">useLocalStorage()</code> - localStorage sync</li>
-                <li>• <code className="bg-muted px-2 py-1 rounded">useClipboard()</code> - Copy to clipboard</li>
-              </ul>
-            </div>
-          </CardContent>
-        </Card>
+      {/* Features Section */}
+      <section className="py-20 lg:py-32">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">ทำไมต้องเลือกเรา?</h2>
+            <p className="text-lg text-muted-foreground">
+              เรามุ่งมั่นพัฒนาเว็บไซต์ที่ตอบโจทย์ธุรกิจของคุณ 
+              ด้วยคุณสมบัติที่ครบครันและทันสมัย
+            </p>
+          </div>
 
-        {/* CTA */}
-        <div className="text-center space-y-4">
-          <p className="text-muted-foreground">Ready to build something amazing?</p>
-          <Button size="lg" asChild>
-            <a href="https://ui.shadcn.com" target="_blank" rel="noopener noreferrer">
-              View Components Documentation
-            </a>
-          </Button>
+          <div className="grid md:grid-cols-3 gap-8">
+            {features.map((feature) => (
+              <Card key={feature.title} className="border-0 shadow-lg">
+                <CardHeader>
+                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <feature.icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <CardTitle>{feature.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base">{feature.description}</CardDescription>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 lg:py-32 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+            พร้อมที่จะเริ่มต้นโปรเจคของคุณ?
+          </h2>
+          
+          <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
+            ติดต่อเราวันนี้เพื่อรับคำปรึกษาฟรี 
+            และเริ่มต้นสร้างเว็บไซต์ที่ดีที่สุดสำหรับธุรกิจของคุณ
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" variant="secondary" className="text-lg">
+              ติดต่อเรา
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+            <Button size="lg" variant="outline" className="text-lg border-primary-foreground/20 hover:bg-primary-foreground/10">
+              ดูแพ็คเกจราคา
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 lg:py-32">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">ลูกค้าของเราพูดอย่างไร?</h2>
+            <p className="text-lg text-muted-foreground">
+              ฟังความคิดเห็นจากลูกค้าที่ไว้วางใจให้เราดูแลโปรเจคของพวกเขา
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial) => (
+              <Card key={testimonial.name} className="border-0 shadow-lg">
+                <CardContent className="pt-6">
+                  <div className="flex mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                    ))}
+                  </div>
+                  
+                  <p className="text-muted-foreground mb-6">"{testimonial.content}"</p>
+                  
+                  <div className="flex items-center">
+                    <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                      <span className="font-semibold text-primary">{testimonial.name[0]}</span>
+                    </div>
+                    <div>
+                      <div className="font-semibold">{testimonial.name}</div>
+                      <div className="text-sm text-muted-foreground">{testimonial.role}</div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

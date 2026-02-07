@@ -4,22 +4,22 @@ import { Separator } from '@/components/ui/separator'
 
 const footerLinks = {
   services: [
-    { label: 'ออกแบบเว็บไซต์', href: '/(website)/services/web-design' },
-    { label: 'UI/UX Design', href: '/(website)/services/ui-ux' },
-    { label: 'Branding', href: '/(website)/services/branding' },
-    { label: 'พัฒนาระบบ', href: '/(website)/services/development' },
+    { label: 'ออกแบบเว็บไซต์', href: '/services/web-design' },
+    { label: 'UI/UX Design', href: '/services/ui-ux' },
+    { label: 'Branding', href: '/services/branding' },
+    { label: 'พัฒนาระบบ', href: '/services/development' },
   ],
   company: [
-    { label: 'เกี่ยวกับเรา', href: '/(website)/about' },
-    { label: 'ทีมงาน', href: '/(website)/team' },
-    { label: 'ร่วมงานกับเรา', href: '/(website)/careers' },
-    { label: 'ข่าวสาร', href: '/(website)/news' },
+    { label: 'เกี่ยวกับเรา', href: '/about' },
+    { label: 'ทีมงาน', href: '/team' },
+    { label: 'ร่วมงานกับเรา', href: '/careers' },
+    { label: 'ข่าวสาร', href: '/news' },
   ],
   support: [
-    { label: 'ติดต่อเรา', href: '/(website)/contact' },
-    { label: 'FAQ', href: '/(website)/faq' },
-    { label: 'นโยบายความเป็นส่วนตัว', href: '/(website)/privacy' },
-    { label: 'ข้อกำหนดการใช้งาน', href: '/(website)/terms' },
+    { label: 'ติดต่อเรา', href: '/contact' },
+    { label: 'FAQ', href: '/faq' },
+    { label: 'นโยบายความเป็นส่วนตัว', href: '/privacy' },
+    { label: 'ข้อกำหนดการใช้งาน', href: '/terms' },
   ],
 }
 
@@ -37,7 +37,7 @@ export function WebsiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <Link href="/(website)" className="flex items-center space-x-2 mb-4">
+            <Link href="" className="flex items-center space-x-2 mb-4">
               <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-lg">W</span>
               </div>
@@ -137,8 +137,8 @@ export function WebsiteFooter() {
             © {new Date().getFullYear()} Website. สงวนลิขสิทธิ์ทั้งหมด
           </p>
           <div className="flex space-x-6 text-sm text-muted-foreground">
-            <Link href="/(website)/privacy" className="hover:text-primary">นโยบายความเป็นส่วนตัว</Link>
-            <Link href="/(website)/terms" className="hover:text-primary">ข้อกำหนดการใช้งาน</Link>
+            <Link href="/privacy" className="hover:text-primary">นโยบายความเป็นส่วนตัว</Link>
+            <Link href="/terms" className="hover:text-primary">ข้อกำหนดการใช้งาน</Link>
           </div>
         </div>
       </div>

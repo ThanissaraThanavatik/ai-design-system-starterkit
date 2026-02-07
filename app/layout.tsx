@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
+import { WebsiteHeader } from "./components/website-header";
+import { WebsiteFooter } from "./components/website-footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,27 +17,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "shadcn/ui Starter Kit",
-  description: "A production-ready Next.js starter with shadcn/ui components, design tokens, and Tailwind CSS",
-  keywords: ["nextjs", "shadcn", "ui", "tailwind", "design-system"],
-  authors: [{ name: "Your Name" }],
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://example.com",
-    siteName: "shadcn/ui Starter",
-  },
+  title: "Modern Website - Powered by shadcn/ui",
+  description: "A modern responsive website built with Next.js, shadcn/ui components, and Tailwind CSS",
+  keywords: ["nextjs", "shadcn", "ui", "tailwind", "responsive", "modern"],
 };
 
-export default function RootLayout({
+export default function WebsiteLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="th" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
       >
         <ThemeProvider
           attribute="class"
@@ -44,7 +39,11 @@ export default function RootLayout({
           disableTransitionOnChange={false}
           themes={['light', 'dark', 'primary', 'system']}
         >
-          {children}
+          <div className="relative flex min-h-screen flex-col">
+            <WebsiteHeader />
+            <main className="flex-1">{children}</main>
+            <WebsiteFooter />
+          </div>
           <Toaster />
         </ThemeProvider>
       </body>

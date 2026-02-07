@@ -15,18 +15,18 @@ import { ThemeToggle } from '@/components/ui/theme-toggle'
 import { cn } from '@/lib/utils'
 
 const navItems = [
-  { href: '/(website)', label: 'หน้าแรก' },
-  { href: '/(website)/about', label: 'เกี่ยวกับเรา' },
-  { href: '/(website)/services', label: 'บริการ' },
-  { href: '/(website)/portfolio', label: 'ผลงาน' },
-  { href: '/(website)/contact', label: 'ติดต่อ' },
+  { href: '', label: 'หน้าแรก' },
+  { href: '/about', label: 'เกี่ยวกับเรา' },
+  { href: '/services', label: 'บริการ' },
+  { href: '/portfolio', label: 'ผลงาน' },
+  { href: '/contact', label: 'ติดต่อ' },
 ]
 
 const serviceItems = [
-  { href: '/(website)/services/web-design', label: 'ออกแบบเว็บไซต์' },
-  { href: '/(website)/services/ui-ux', label: 'UI/UX Design' },
-  { href: '/(website)/services/branding', label: 'Branding' },
-  { href: '/(website)/services/development', label: 'พัฒนาระบบ' },
+  { href: '/services/web-design', label: 'ออกแบบเว็บไซต์' },
+  { href: '/services/ui-ux', label: 'UI/UX Design' },
+  { href: '/services/branding', label: 'Branding' },
+  { href: '/services/development', label: 'พัฒนาระบบ' },
 ]
 
 export function WebsiteHeader() {
@@ -38,7 +38,7 @@ export function WebsiteHeader() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/(website)" className="flex items-center space-x-2">
+          <Link href="" className="flex items-center space-x-2">
             <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">W</span>
             </div>
@@ -56,7 +56,7 @@ export function WebsiteHeader() {
                         variant="ghost"
                         className={cn(
                           'flex items-center space-x-1',
-                          pathname.startsWith('/(website)/services') && 'text-primary'
+                          pathname.startsWith('/services') && 'text-primary'
                         )}
                       >
                         <span>{item.label}</span>
