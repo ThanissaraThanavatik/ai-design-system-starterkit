@@ -207,16 +207,25 @@ export default function HomepageTest() {
 
       {/* Concept Section - From Figma node 5024-404 */}
       <section className="relative w-full overflow-hidden py-16 lg:py-24">
-        {/* Gradient Background - White to Teal */}
+        {/* Background Image */}
+        <Image
+          src="/images/yadom/concept-bg-5024-404.png"
+          alt="Yadom Concept Background"
+          fill
+          className="object-cover object-center z-0"
+          sizes="100vw"
+        />
+        
+        {/* Gradient Overlay */}
         <div
-          className="absolute inset-0 z-0"
+          className="absolute inset-0 z-10"
           style={{
-            background: 'linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(0,150,137,0.15) 50%, rgba(0,150,137,0.3) 100%)'
+            background: 'linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(0,150,137,0.2) 50%, rgba(0,150,137,0.4) 100%)'
           }}
         />
         
         {/* Content Container */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-center text-center">
             {/* Text 1: "ไม่รู้ตัวเลยว่า...ยาดมกลายเป็น" */}
             <h2 
