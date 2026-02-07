@@ -70,38 +70,38 @@ export function Sidebar({ className }: SidebarProps) {
   const SidebarContent = () => (
     <>
       {/* Header - Sticky Top */}
-      <div className="flex-shrink-0 bg-background">
+      <div className="flex-shrink-0 bg-sidebar">
         <div className="flex items-center gap-2 px-4 py-4">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-            <span className="text-lg font-bold text-primary-foreground">S</span>
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-sidebar-primary">
+            <span className="text-lg font-bold text-sidebar-primary-foreground">S</span>
           </div>
-          <span className="font-semibold">shadcn/ui</span>
+          <span className="font-semibold text-sidebar-foreground">shadcn/ui</span>
         </div>
 
         <div className="px-4 pb-4">
           <div className="relative">
-            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-sidebar-foreground/70" />
             <Input
               type="search"
               placeholder="Search components..."
-              className="pl-8"
+              className="pl-8 bg-sidebar border-sidebar-border text-sidebar-foreground placeholder:text-sidebar-foreground/50"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
         </div>
 
-        <Separator />
+        <Separator className="bg-sidebar-border" />
       </div>
 
       {/* Scrollable Content */}
-      <ScrollArea className="flex-1 px-3 py-4 min-h-0">
+      <ScrollArea className="flex-1 px-3 py-4 min-h-0 bg-sidebar">
         <div className="space-y-1">
           <Link
             href="/"
             className={cn(
-              'flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:bg-accent',
-              pathname === '/' ? 'bg-accent text-accent-foreground' : 'text-muted-foreground'
+              'flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:bg-sidebar-accent',
+              pathname === '/' ? 'bg-sidebar-accent text-sidebar-accent-foreground' : 'text-sidebar-foreground/70'
             )}
           >
             <Home className="h-4 w-4" />
@@ -110,7 +110,7 @@ export function Sidebar({ className }: SidebarProps) {
         </div>
 
         <div className="mt-6 space-y-1">
-          <p className="px-3 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+          <p className="px-3 text-xs font-semibold text-sidebar-foreground/70 uppercase tracking-wider">
             Components
           </p>
           
@@ -124,8 +124,8 @@ export function Sidebar({ className }: SidebarProps) {
                 <button
                   onClick={() => toggleCategory(category.key)}
                   className={cn(
-                    'flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:bg-accent',
-                    isActive ? 'text-foreground' : 'text-muted-foreground'
+                    'flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:bg-sidebar-accent',
+                    isActive ? 'text-sidebar-foreground' : 'text-sidebar-foreground/70'
                   )}
                 >
                   <div className="flex items-center gap-3">
@@ -147,10 +147,10 @@ export function Sidebar({ className }: SidebarProps) {
                         key={component.href}
                         href={component.href}
                         className={cn(
-                          'flex flex-col rounded-lg px-3 py-2 text-sm transition-colors hover:bg-accent',
+                          'flex flex-col rounded-lg px-3 py-2 text-sm transition-colors hover:bg-sidebar-accent',
                           pathname === component.href
-                            ? 'bg-accent text-accent-foreground'
-                            : 'text-muted-foreground hover:text-foreground'
+                            ? 'bg-sidebar-accent text-sidebar-accent-foreground'
+                            : 'text-sidebar-foreground/70 hover:text-sidebar-foreground'
                         )}
                         onClick={() => setIsMobileOpen(false)}
                       >
@@ -167,9 +167,9 @@ export function Sidebar({ className }: SidebarProps) {
       </ScrollArea>
 
       {/* Footer - Sticky Bottom */}
-      <div className="flex-shrink-0 border-t bg-background p-4">
+      <div className="flex-shrink-0 border-t border-sidebar-border bg-sidebar p-4">
         <div className="flex items-center justify-between">
-          <span className="text-xs text-muted-foreground">
+          <span className="text-xs text-sidebar-foreground/70">
             {allComponents.length} components
           </span>
           <ThemeToggle />
@@ -193,7 +193,7 @@ export function Sidebar({ className }: SidebarProps) {
       {/* Mobile Sidebar Overlay */}
       {isMobileOpen && (
         <div
-          className="fixed inset-0 z-40 bg-background/80 backdrop-blur-sm md:hidden"
+          className="fixed inset-0 z-40 bg-sidebar/80 backdrop-blur-sm md:hidden"
           onClick={() => setIsMobileOpen(false)}
         />
       )}
@@ -201,7 +201,7 @@ export function Sidebar({ className }: SidebarProps) {
       {/* Mobile Sidebar */}
       <aside
         className={cn(
-          'fixed inset-y-0 left-0 z-40 flex w-72 flex-col overflow-hidden border-r bg-background transition-transform duration-300 md:hidden',
+          'fixed inset-y-0 left-0 z-40 flex w-72 flex-col overflow-hidden border-r border-sidebar-border bg-sidebar transition-transform duration-300 md:hidden',
           isMobileOpen ? 'translate-x-0' : '-translate-x-full'
         )}
       >
@@ -211,7 +211,7 @@ export function Sidebar({ className }: SidebarProps) {
       {/* Desktop Sidebar */}
       <aside
         className={cn(
-          'fixed inset-y-0 left-0 z-30 hidden w-72 flex-col h-screen overflow-hidden border-r bg-background md:flex',
+          'fixed inset-y-0 left-0 z-30 hidden w-72 flex-col h-screen overflow-hidden border-r border-sidebar-border bg-sidebar md:flex',
           className
         )}
       >
