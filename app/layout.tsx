@@ -3,8 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
-import { SiteHeader } from "./components/site-header";
-import { SiteFooter } from "./components/site-footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,18 +15,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Modern Business - Professional Web Solutions",
-  description: "Professional web design and development services for your business success",
-  keywords: ["web design", "development", "business", "modern", "responsive"],
+  title: "shadcn/ui Component Documentation",
+  description: "A complete collection of shadcn/ui components with examples and documentation",
 };
 
-export default function SiteLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="th" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
       >
@@ -39,11 +36,7 @@ export default function SiteLayout({
           disableTransitionOnChange={false}
           themes={['light', 'dark', 'primary', 'system']}
         >
-          <div className="relative flex min-h-screen flex-col">
-            <SiteHeader />
-            <main className="flex-1">{children}</main>
-            <SiteFooter />
-          </div>
+          {children}
           <Toaster />
         </ThemeProvider>
       </body>
