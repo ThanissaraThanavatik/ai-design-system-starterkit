@@ -116,17 +116,17 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-/* Primary Theme - From Primary.tokens1.json */
+/* Primary Theme - From Primary.tokens2.json */
 .primary {
   --radius: 0.625rem;
   --background: #009689;
   --foreground: #FAFAFA;
-  --card: #009689;
-  --card-foreground: #FAFAFA;
+  --card: #FAFAFA;
+  --card-foreground: #009689;
   --popover: #262626;
   --popover-foreground: #FAFAFA;
-  --primary: #064E3B;
-  --primary-foreground: #171717;
+  --primary: #FAFAFA;
+  --primary-foreground: #009689;
   --secondary: #262626;
   --secondary-foreground: #FAFAFA;
   --muted: #262626;
