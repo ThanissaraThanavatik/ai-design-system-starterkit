@@ -1,133 +1,159 @@
 /**
  * Design Tokens - Centralized design system values
- * Use these tokens for consistency across the application
+ * Extracted from Figma: Yadom Herbal Inhaler Landing Page
+ * File ID: IasfDpqUwtRZOaWQ6C5Mtn
  */
 
-// Color Tokens
+// Color Tokens - From Figma Variables
 export const colors = {
-  // Primary Colors
+  // Primary Brand Color (Teal/Green from Yadom)
   primary: {
-    50: 'oklch(0.975 0 0)',
-    100: 'oklch(0.95 0 0)',
-    200: 'oklch(0.9 0 0)',
-    300: 'oklch(0.8 0 0)',
-    400: 'oklch(0.6 0 0)',
-    500: 'oklch(0.4 0 0)',
-    600: 'oklch(0.3 0 0)',
-    700: 'oklch(0.25 0 0)',
-    800: 'oklch(0.205 0 0)',
-    900: 'oklch(0.145 0 0)',
-    950: 'oklch(0.1 0 0)',
+    DEFAULT: '#009689',
+    50: '#e6f7f5',
+    100: '#b0e8e2',
+    200: '#8addd4',
+    300: '#54cec2',
+    400: '#33c4b6',
+    500: '#009689', // Main brand color
+    600: '#00897d',
+    700: '#006b61',
+    800: '#00534b',
+    900: '#003f39',
+    950: '#002926',
+  },
+  // Background Colors
+  background: {
+    DEFAULT: '#ffffff',
+    secondary: '#fafafa',
+    muted: '#f5f5f5',
+  },
+  // Foreground/Text Colors
+  foreground: {
+    DEFAULT: '#0a0a0a', // Primary text (VariableID:374:416)
+    secondary: '#525252',
+    muted: '#737373',
+    inverse: '#ffffff',
   },
   // Semantic Colors
-  success: 'oklch(0.646 0.222 41.116)',
-  warning: 'oklch(0.828 0.189 84.429)',
-  error: 'oklch(0.577 0.245 27.325)',
-  info: 'oklch(0.6 0.118 184.704)',
-  // Neutral/Gray Colors
+  success: '#10b981',
+  warning: '#f59e0b',
+  error: '#ef4444',
+  info: '#3b82f6',
+  // Neutral/Gray Scale
   gray: {
-    50: 'oklch(0.985 0 0)',
-    100: 'oklch(0.97 0 0)',
-    200: 'oklch(0.922 0 0)',
-    300: 'oklch(0.87 0 0)',
-    400: 'oklch(0.708 0 0)',
-    500: 'oklch(0.556 0 0)',
-    600: 'oklch(0.4 0 0)',
-    700: 'oklch(0.3 0 0)',
-    800: 'oklch(0.205 0 0)',
-    900: 'oklch(0.145 0 0)',
-    950: 'oklch(0.05 0 0)',
+    50: '#fafafa',
+    100: '#f5f5f5',
+    200: '#e5e5e5',
+    300: '#d4d4d4',
+    400: '#a3a3a3',
+    500: '#737373',
+    600: '#525252',
+    700: '#404040',
+    800: '#262626',
+    900: '#0a0a0a', // Primary text color
+    950: '#030303',
+  },
+  // Border Colors
+  border: {
+    DEFAULT: '#e5e5e5',
+    strong: '#d4d4d4',
+    subtle: '#f5f5f5',
   },
 }
 
-// Typography Tokens
+// Typography Tokens - From Figma Variables (Inter font family)
 export const typography = {
   // Font Families
   fontFamily: {
-    sans: 'var(--font-geist-sans)',
-    mono: 'var(--font-geist-mono)',
+    sans: 'Inter, system-ui, -apple-system, sans-serif',
+    mono: 'ui-monospace, SFMono-Regular, monospace',
   },
-  // Font Sizes
+  // Font Sizes - Based on Figma node 5024-368
   fontSize: {
     xs: ['12px', { lineHeight: '16px' }],
-    sm: ['14px', { lineHeight: '20px' }],
-    base: ['16px', { lineHeight: '24px' }],
+    sm: ['14px', { lineHeight: '20px' }],      // Button text
+    base: ['16px', { lineHeight: '24px' }],    // Body text, nav items
     lg: ['18px', { lineHeight: '28px' }],
-    xl: ['20px', { lineHeight: '28px' }],
+    xl: ['20px', { lineHeight: '28px' }],      // Logo text (20px, lineHeight 28px)
     '2xl': ['24px', { lineHeight: '32px' }],
     '3xl': ['30px', { lineHeight: '36px' }],
     '4xl': ['36px', { lineHeight: '40px' }],
     '5xl': ['48px', { lineHeight: '48px' }],
+    '6xl': ['60px', { lineHeight: '60px' }],
+    '7xl': ['72px', { lineHeight: '72px' }],
   },
-  // Font Weights
+  // Font Weights - From Figma
   fontWeight: {
     light: 300,
     normal: 400,
-    medium: 500,
-    semibold: 600,
+    medium: 500,      // Nav items, buttons (VariableID:1043:1100)
+    semibold: 600,    // Logo (VariableID:1043:1102)
     bold: 700,
     extrabold: 800,
   },
-  // Line Heights
+  // Line Heights - From Figma
   lineHeight: {
     tight: 1.2,
-    normal: 1.5,
+    normal: 1.5,      // 150% for 16px text
     relaxed: 1.625,
     loose: 2,
+    '140': '1.4',     // Logo: 140% (28px line height for 20px font)
+    '150': '1.5',     // Body: 150% (24px line height for 16px font)
+    '143': '1.43',    // Button: 142.857% (20px line height for 14px font)
   },
   // Letter Spacing
   letterSpacing: {
     tight: '-0.02em',
-    normal: '0em',
+    normal: '0em',    // From Figma VariableID:1043:1112
     wide: '0.02em',
     wider: '0.05em',
   },
 }
 
-// Spacing Tokens
+// Spacing Tokens - From Figma Variables
 export const spacing = {
   0: '0',
-  1: '0.25rem',
-  2: '0.5rem',
-  3: '0.75rem',
-  4: '1rem',
-  5: '1.25rem',
-  6: '1.5rem',
-  8: '2rem',
-  10: '2.5rem',
-  12: '3rem',
-  16: '4rem',
-  20: '5rem',
-  24: '6rem',
-  28: '7rem',
-  32: '8rem',
-  36: '9rem',
-  40: '10rem',
-  44: '11rem',
-  48: '12rem',
-  52: '13rem',
-  56: '14rem',
-  60: '15rem',
-  64: '16rem',
-  72: '18rem',
-  80: '20rem',
-  96: '24rem',
+  1: '0.25rem',     // 4px
+  2: '0.5rem',      // 8px - button padding vertical (VariableID:90:290)
+  3: '0.75rem',     // 12px
+  4: '1rem',        // 16px - button padding horizontal (VariableID:90:295)
+  5: '1.25rem',     // 20px
+  6: '1.5rem',      // 24px
+  8: '2rem',        // 32px - nav item spacing (VariableID:455:677)
+  10: '2.5rem',     // 40px
+  12: '3rem',       // 48px
+  16: '4rem',       // 64px
+  20: '5rem',       // 80px
+  24: '6rem',       // 96px
+  28: '7rem',       // 112px
+  32: '8rem',       // 128px
+  36: '9rem',       // 144px
+  40: '10rem',      // 160px
+  44: '11rem',      // 176px
+  48: '12rem',      // 192px
+  52: '13rem',      // 208px
+  56: '14rem',      // 224px
+  60: '15rem',      // 240px
+  64: '16rem',      // 256px
+  72: '18rem',      // 288px
+  80: '20rem',      // 320px
+  96: '24rem',      // 384px
 }
 
-// Border Radius Tokens
+// Border Radius Tokens - From Figma (VariableID:90:555)
 export const borderRadius = {
   none: '0',
-  sm: 'calc(var(--radius) - 4px)',
-  base: 'calc(var(--radius) - 2px)',
-  md: 'var(--radius)',
-  lg: 'calc(var(--radius) + 4px)',
-  xl: 'calc(var(--radius) + 8px)',
-  '2xl': 'calc(var(--radius) + 12px)',
-  '3xl': 'calc(var(--radius) + 16px)',
+  sm: '4px',
+  base: '6px',
+  md: '8px',        // Button border radius (VariableID:90:555)
+  lg: '12px',
+  xl: '16px',
+  '2xl': '20px',
+  '3xl': '24px',
   full: '9999px',
 }
 
-// Shadow Tokens (Elevation)
+// Shadow Tokens (Elevation) - From Figma
 export const shadows = {
   none: 'none',
   sm: '0 1px 2px 0 rgb(0 0 0 / 0.05)',
@@ -136,6 +162,10 @@ export const shadows = {
   lg: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
   xl: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
   '2xl': '0 25px 50px -12px rgb(0 0 0 / 0.25)',
+  // Button shadow from Figma
+  button: '0 1px 2px 0 rgb(0 0 0 / 0.1)',
+  // Card shadow
+  card: '0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05)',
 }
 
 // Duration Tokens (Animations)
