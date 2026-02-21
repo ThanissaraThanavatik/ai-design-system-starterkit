@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { ComponentLayout } from '@/components/component-layout'
 import {
   Table,
   TableBody,
@@ -664,6 +665,7 @@ export default function TablePage() {
           </section>
 
         </div>
+      </div>
       </div>
     </ComponentLayout>
   )

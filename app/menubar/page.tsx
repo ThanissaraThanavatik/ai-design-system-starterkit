@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/menubar"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
+import { ComponentLayout } from '@/components/component-layout'
 import {
   ArrowLeft,
   FileText,
@@ -82,6 +83,9 @@ export default function MenubarShowcase() {
             className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground mb-4"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
+            Back
+          </Link>
+        </div>
 
         {/* Default Menubar */}
         <Card className="mb-8">

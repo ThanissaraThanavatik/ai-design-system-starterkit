@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { ComponentLayout } from '@/components/component-layout'
 import { Switch } from "@/components/ui/switch"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -521,6 +522,7 @@ export default function SwitchPage() {
           </section>
 
         </div>
+      </div>
       </div>
     </ComponentLayout>
   )

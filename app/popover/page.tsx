@@ -800,7 +800,8 @@ function PopoverDemo() {
         <Button size="sm" variant="secondary" onClick={() => setOpen(!open)}>
           Toggle
         </Button>
-    </ComponentLayout>
+      </div>
+    </div>
   )
 }
 

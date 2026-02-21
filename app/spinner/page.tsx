@@ -451,6 +451,7 @@ export default function SpinnerPage() {
 
         </div>
       </div>
+      </div>
     </ComponentLayout>
   )
 }

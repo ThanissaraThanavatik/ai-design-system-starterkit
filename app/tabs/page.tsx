@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import { ComponentLayout } from '@/components/component-layout'
 import {
   Tabs,
   TabsContent,
@@ -677,6 +678,7 @@ export default function TabsPage() {
           </section>
 
         </div>
+      </div>
       </div>
     </ComponentLayout>
   )

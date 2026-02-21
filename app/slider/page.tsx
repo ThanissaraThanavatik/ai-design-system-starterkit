@@ -425,6 +425,7 @@ export default function SliderPage() {
 
         </div>
       </div>
+      </div>
     </ComponentLayout>
   )
 }

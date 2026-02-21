@@ -508,6 +508,7 @@ function ControlledOTPExample() {
         >
           Clear
         </Button>
-        </div>
+      </div>
+    </div>
   )
 }

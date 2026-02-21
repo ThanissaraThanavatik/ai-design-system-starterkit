@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/select"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
+import { ComponentLayout } from '@/components/component-layout'
 import {
   ArrowLeft,
   Info,
@@ -91,6 +92,9 @@ export default function LabelShowcase() {
             className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground mb-4"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
+            Back
+          </Link>
+        </div>
 
         {/* Default Labels */}
         <Card className="mb-8">

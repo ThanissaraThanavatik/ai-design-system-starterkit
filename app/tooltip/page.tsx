@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import { ComponentLayout } from '@/components/component-layout'
 import {
   Tooltip,
   TooltipContent,
@@ -921,6 +922,7 @@ export default function TooltipPage() {
           </section>
 
         </div>
+      </div>
       </div>
     </ComponentLayout>
   )

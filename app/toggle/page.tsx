@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import { ComponentLayout } from '@/components/component-layout'
 import { Toggle } from "@/components/ui/toggle"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -651,6 +652,7 @@ export default function TogglePage() {
           </section>
 
         </div>
+      </div>
       </div>
     </ComponentLayout>
   )

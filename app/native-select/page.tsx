@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
+import { ComponentLayout } from '@/components/component-layout'
 import {
   ArrowLeft,
   ChevronDown,
@@ -94,6 +95,9 @@ export default function NativeSelectShowcase() {
             className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground mb-4"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
+            Back
+          </Link>
+        </div>
 
         {/* Default Native Select */}
         <Card className="mb-8">

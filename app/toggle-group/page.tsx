@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import { ComponentLayout } from '@/components/component-layout'
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
@@ -793,6 +794,7 @@ export default function ToggleGroupPage() {
           </section>
 
         </div>
+      </div>
       </div>
     </ComponentLayout>
   )

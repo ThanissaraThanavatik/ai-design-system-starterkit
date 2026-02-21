@@ -939,6 +939,7 @@ export default function NavigationMenuShowcasePage() {
           </div>
         </section>
       </div>
+      </div>
     </ComponentLayout>
   )
 }

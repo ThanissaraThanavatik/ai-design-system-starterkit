@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Badge } from "@/components/ui/badge"
+import { ComponentLayout } from '@/components/component-layout'
 import {
   CheckCircle2,
   XCircle,
@@ -205,9 +206,10 @@ export default function SonnerPage() {
               <Star className="h-5 w-5 fill-yellow-500 text-yellow-500" />
             </button>
           ))}
-      </ComponentLayout>
-  )
-}
+        </div>
+      </div>
+    )
+  }
 
   // Connection status
   const showConnectionStatus = () => {
@@ -228,9 +230,10 @@ export default function SonnerPage() {
           <p className="text-sm text-muted-foreground truncate max-w-[200px]">
             Hey! How are you doing today?
           </p>
-      </ComponentLayout>
-  )
-}
+        </div>
+      </div>
+    )
+  }
 
   // Payment success
   const showPaymentSuccess = () => {
@@ -579,6 +582,7 @@ export default function SonnerPage() {
           </section>
 
         </div>
+      </div>
       </div>
     </ComponentLayout>
   )
